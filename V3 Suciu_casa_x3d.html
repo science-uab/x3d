@@ -1,0 +1,810 @@
+<html> 
+   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+     <title>Casa lu Suciu</title> 
+     <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+   </head> 
+   <body> 
+     <h1>Casa  Suciu</h1> 
+     <p> 
+       Casa  Suciu 
+     </p> 
+	 <x3d width='1200px' height='800px'> 
+	   <Scene DEF= 'scene' >
+		<!--Viewpoint id="front" position=" 12, 0, 40" orientation=", 0, 0, 0" description="camera"></Viewpoint-->
+		<!--Viewpoint id="front" position="-0.07427 0.95329 -2.79608" orientation="-0.01451 0.99989 0.00319 3.15833" description="camera"></Viewpoint-->
+        <!--Viewpoint id="right" position="-2.43383 1.07351 -1.28700" orientation="-0.00318 -0.99950 -0.03159 2.06609" description="camera"></Viewpoint-->
+        <Viewpoint id="front" position="40 4 -30" orientation="-0.05 -5 -0.05 4.1" description="camera"></Viewpoint>
+
+
+        <Background skyColor="1 1 1"></Background>
+	   
+
+<Transform DEF= "con ref">	
+<!--Cone punct referinta-->
+	<Transform translation='0 1 0'> 
+		<shape> 
+			 <appearance> 
+			   <material diffuseColor='red'></material> 
+			 </appearance> 
+			 <Cone bottomRadius = 0.2>
+			 </Cone> 
+		  </shape> 
+	</Transform>
+</Transform>	
+<Transform DEF= "Perimetru">
+<!--Gazon-->
+	<Transform translation = "4 -2.5 0">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='#6FCA75'></material> 
+		   </appearance> 
+		   <Box size ='35, 0.1, 30' solid='true' >
+		   </Box> 
+		</shape>
+
+	</Transform>
+<!--Fundatie-->
+	<Transform translation = "1 -2 0">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='#B06565'></material> 
+		   </appearance> 
+		   <Box size ='25, 1, 21' solid='true' >
+		   </Box> 
+		</shape>
+
+	</Transform>
+</Transform>
+
+<Transform DEF= "Intrare">	
+<!--D Fata Exterior Perete D1-->
+	<Transform translation = "11, 0.5, -2.6 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 3' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--D Fata Exterior Perete D2-->
+	<Transform translation = "11, 0.5, -8.6 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 3' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--D Fata Exterior Perete D3-->
+<Transform translation = "11, -0.5, -5.6 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 2, 3' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+	
+<!--D Fata Exterior Geam D-->
+<Transform translation = "11, 1.5, -5.6 ">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='white' transparency="0.5"></Material> 
+		   </appearance> 
+		   <Box size ='0.2, 2, 3' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+
+<!--S Fata Exterior Perete S1-->
+	<Transform translation = "11, 0.5, 2.6 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 3' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>		
+<!--S Fata Exterior Perete S2-->
+	<Transform translation = "11, 0.5, 8.5 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 2.8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>		
+<!--S Fata Exterior Perete S3-->
+<Transform translation = "11, -0.5, 5.6 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 2, 3' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+		
+<!--S Fata Exterior Geam S-->
+<Transform translation = "11, 1.5, 5.6 ">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='white' transparency="0.5"></Material> 
+		   </appearance> 
+		   <Box size ='0.2, 2, 3' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+
+<!--Fata Exterior Perete(centura) -->
+<Transform translation = "11, 3, -0.1 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 1, 20' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+	
+<!--Usa intrae-->
+	<Transform translation = "11, 0.5, 0 ">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='white' transparency="0.5"></Material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 2.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+</Transform>
+
+<Transform DEF= "Perete Ext.Dreapta">
+
+<!--D Exterior Perete D.1. -->
+	<Transform translation = "10.3 0.5 -10">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='1.3, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Exterior Perete D.2.-->
+<Transform translation = "8.2 -0.5 -10">
+		<shape> 
+		   <appearance> 
+			 <!--Material diffuseColor='white' transparency="0.5"></Material-->
+			 <material diffuseColor='0 1 1'></material>
+		   </appearance> 
+			 <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Exterior Perete D.3. -->
+	<Transform translation = "5.35 0.5 -10">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='2.7, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Exterior Perete D.4.-->
+<Transform translation = "2.5 -0.5 -10">
+		<shape> 
+		   <appearance> 
+			 <!--Material diffuseColor='white' transparency="0.5"></Material-->
+			 <material diffuseColor='0 1 1'></material>
+		   </appearance> 
+			 <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Exterior Perete D.5. -->
+	<Transform translation = "-0.75 0.5 -10">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='3.5, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Exterior Perete D.6.-->
+<Transform translation = "-4 -0.5 -10">
+		<shape> 
+		   <appearance> 
+			 
+			 <material diffuseColor='0 1 1'></material>
+		   </appearance> 
+			 <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Exterior Perete D.7. -->
+	<Transform translation = "-7.25 0.5 -10">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='3.5, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--D Exterior Perete D.8. -->
+	<Transform translation = "-9.5 0. -10">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='1, 3, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>		
+<!--D Exterior Perete D.9. -->
+	<Transform translation = "-10.5 0.5 -10">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='1, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Exterior Perete(centura) D.10. -->	
+<Transform translation = "-0.1, 3, -10 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='22, 1, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+
+	
+<!-- D Exterior Geam Lat.D.1-->
+<Transform translation = "8.2 1.5 -10">
+		<shape> 
+		   <appearance> 			 
+			 <Material diffuseColor='white' transparency="0.5"></Material>
+		   </appearance> 
+			 <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!-- D Exterior Geam Lat.D.2-->
+<Transform translation = "2.5 1.5 -10">
+		<shape> 
+		   <appearance> 
+			 <!--Material diffuseColor='white' transparency="0.5"></Material-->
+			 <Material diffuseColor='white' transparency="0.5"></Material>
+		   </appearance> 
+			 <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!-- D Exterior Geam Lat.D.3-->
+<Transform translation = "-4, 1.5, -10">
+		<shape> 
+		   <appearance> 
+			 <!--Material diffuseColor='white' transparency="0.5"></Material-->
+			 <Material diffuseColor='white' transparency="0.5"></Material>
+		   </appearance> 
+			 <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!-- D Exterior Geam Lat.D.4-->
+<Transform translation = "-9.5, 2, -10">
+		<shape> 
+		   <appearance> 
+			 <!--Material diffuseColor='white' transparency="0.5"></Material-->
+			<Material diffuseColor='white' transparency="0.5"></Material>
+		   </appearance> 
+			 <Box size ='1, 1, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>			
+</Transform>
+
+<Transform DEF= "Hol Perete Dreapa">
+
+<!--D Hol Perete D.1. -->
+	<Transform translation = "9.8 0.5 -2">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='2.2, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--D Hol Perete D.2. -->
+	<Transform translation = "5.6 0.5 -2">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='2.2, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Hol Perete D.3. -->
+	<Transform translation = "0.8 0.5 -2">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='3.5, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>		
+<!--D Hol Perete D.4. -->
+	<Transform translation = "-6 0.5 -2">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='6.0, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Hol Perete D.5. -->
+	<Transform translation = "-10.5 0.5 -2">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='1, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Hol Perete(centura) D.6. -->	
+<Transform translation = "-0.1, 3, -2 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='22, 1, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+	
+<!--D Hol Usa D.1. -->
+	<Transform translation = "7.7 0.5 -2">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='#994C00' transparency="0.2"></Material>
+		   </appearance> 
+		   <Box size ='2, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--D Hol Usa D.2. -->
+	<Transform translation = "3.5 0.5 -2">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='#994C00' transparency="0.2"></Material>
+		   </appearance> 
+		   <Box size ='2, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--D Hol Usa D.3. -->
+	<Transform translation = "-2 0.5 -2">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='#994C00' transparency="0.2"></Material> 
+		   </appearance> 
+		   <Box size ='2, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>		
+<!--D Hol Usa D.4. -->
+	<Transform translation = "-9.5 0.5 -2">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='#994C00' transparency="0.2"></Material>
+		   </appearance> 
+		   <Box size ='1, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>			
+</Transform>
+		
+<Transform DEF= "Hol Perete Stanga">	
+<!--S Hol Perete S.3-->
+	<Transform translation = "-2.3 0.5 2">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='1.25, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--S Hol Usa S.3-->
+	<Transform translation = "-0.9 0.5 2">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='#994C00' transparency="0.2"></Material>
+		   </appearance> 
+		   <Box size ='1.5, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--S Hol Perete S.2-->
+	<Transform translation = "0.6 0.5 2">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='1.5, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--S Hol Usa S.2-->
+	<Transform translation = "2.35 0.5 2">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='#994C00' transparency="0.2"></Material>
+		   </appearance> 
+		   <Box size ='2, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--S Hol Perete S.1-->
+	<Transform translation = "7.1 0.5 2">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='7.5, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--S Hol Perete S.4.Liv-->
+	<Transform translation = "-3, 0.5, 5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--S Hol Perete(centura) S.4. -->
+<Transform translation = "4, 3, 2 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='14, 1, 0.2' solid='true'>	 
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--S Perete(centura) compartimentare Birou+Bucatarie S. -->
+	<Transform translation = "0.5, 3, 5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 1, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--S Perete compartimentare Birou+Bucatarie S.1-->
+	<Transform translation = "0.5, 0.5, 5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--S Liv. Perete(centura) Birou S.4.2 -->
+	<Transform translation = "-3, 3, 5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 1, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+	</Transform>
+
+<Transform DEF= "Perete Ext. S.">
+<!--S Ext Perete S.1-->
+	<Transform translation = "9.25 0.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='3.5, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--S Ext Perete S.2-->
+	<Transform translation = "6 -0.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--S Ext Perete S.3-->
+	<Transform translation = "1.85 0.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='5.3, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!-- S Ext Perete S.4-->
+<Transform translation = "-1.3 -0.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <!--Material diffuseColor='white' transparency="0.5"></Material-->
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+			 <Box size ='1, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--S Ext Perete S.5-->
+	<Transform translation = "-3.65 0.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='3.7, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--S Ext Perete S.6-->
+	<Transform translation = "-7 -0.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--S Ext Perete S.7-->
+	<Transform translation = "-9.75 0.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='2.5, 4, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--S Ext Perete(centura) S.8 -->
+<Transform translation = "0, 3, 9.8 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 	   
+		   <Box size ='22, 1, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+
+	
+<!-- S Ext Geam Bucatarie.S.1-->
+<Transform translation = "6 1.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='white' transparency="0.5"></Material>
+		   </appearance> 
+			 <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!-- S Ext Geam Birou.S.2-->
+<Transform translation = "-1.3 1.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='white' transparency="0.5"></Material> 
+		   </appearance> 
+			 <Box size ='1, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>		
+<!-- S Ext Geam Living.S.3-->
+<Transform translation = "-7 1.5 9.8">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='white' transparency="0.5"></Material>
+		   </appearance> 
+			 <Box size ='3, 2, 0.2' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+	
+	
+</Transform>	
+		
+
+<Transform DEF= "Perete Ext. Liv.">
+
+<!--Extrerior Hol Perete Liv.1-->
+	<Transform translation = "-11, 0.5, 7.7 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 4.4' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--Extrerior Hol Perete Liv.2-->	
+<Transform translation = "-11 -0.5 4">
+		<shape> 
+		   <appearance> 
+			 <!--Material diffuseColor='white' transparency="0.5"></Material-->
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+			 <Box size ='0.2, 2, 3' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+<!--Extrerior Hol Perete Liv.3-->
+	<Transform translation = "-11, 0.5, -3.8 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 12.6' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--Extrerior Hol Perete Liv.(centura) -->
+<Transform translation = "-11, 3, -0.1 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 1, 20' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>		
+<!--Extrerior Hol Geam Liv-->	
+<Transform translation = "-11 1.5 4">
+		<shape> 
+		   <appearance> 
+			 <Material diffuseColor='white' transparency="0.5"></Material> 
+		   </appearance> 
+			 <Box size ='0.2, 2, 3' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+</Transform>
+
+<Transform DEF= "Perete compartimentare D.">
+		
+<!--Perete compartimentare D.1-->
+	<Transform translation = "5.5, 0.5, -5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--Perete(centura) compartimentare D.1-->	
+<Transform translation = "-8, 3, -5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 1, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>			
+<!--Perete compartimentare D.2-->
+	<Transform translation = "-0.5, 0.5, -5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>		
+<!--Perete(centura) compartimentare D.2-->	
+<Transform translation = "-0.5, 3, -5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 1, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>		
+<!--Perete compartimentare D.3-->
+	<Transform translation = "-8, 0.5, -5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='0 1 1'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 4, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+	
+<!--Perete(centura) compartimentare D.3-->	
+<Transform translation = "5.5, 3, -5.9 ">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='green'></material> 
+		   </appearance> 
+		   <Box size ='0.2, 1, 8' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>	
+	
+</Transform>
+
+<!--Pod-->
+	<Transform translation = "1 3.5 0">
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='#B06565'></material> 
+		   </appearance> 
+		   <Box size ='25, 0.2, 24' solid='true' >
+		   </Box> 
+		</shape>
+
+	</Transform>
+<!--Acoperis 1-->
+	<Transform translation = '1 6.1 7 'rotation= '0.001, 0, 0, 3.60'>
+		<shape> 
+		   <appearance> 
+			<ImageTexture  url="roof.jpg"><ImageTexture/-->
+		   </appearance> 
+		   <Box size ='25, 0.2, 16' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+<!--Acoperis 1-->	
+	<Transform translation = '1 6.1 -7 'rotation= '-0.001, 0, 0, 3.60'>
+		<shape> 
+		   <appearance> 
+			<ImageTexture  url="roof.jpg"><ImageTexture/-->
+		   </appearance> 
+		   <Box size ='25, 0.2, 16' solid='true' >
+		   </Box> 
+		</shape>
+	</Transform>
+
+	
+
+
+	
+	
+	
+	   </Scene> 
+	</x3d> 
+   </body> 
+</html> 
