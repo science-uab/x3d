@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+</head>
+
+<body>
+
+
+<X3D width="1920" height="1080">
+
+<Scene>
+
+<!-- Corp -->
+<Transform scale="0.5,0.05,0.5">
+	<Shape>
+		<Appearance>
+			<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
+		</Appearance>
+		<Box></Box>
+	</Shape>
+</Transform>
+
+<!-- Spatar -->
+<Transform translation='0,0.5,-0.5'>
+	<Transform rotation='1,0,0,1.5708'> 
+		<Transform scale="0.5,0.05,0.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!-- picior stanga spate -->
+<Transform translation='-0.35,-0.4,-0.35'>
+	<Transform scale="0.06,0.4,0.06">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
+			</Appearance>
+			<Cylinder></Cylinder>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- picior dreapta spate -->
+<Transform translation='0.35,-0.4,-0.35'>
+	<Transform scale="0.06,0.4,0.06">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
+			</Appearance>
+			<Cylinder></Cylinder>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- picior dreapta fata -->
+<Transform translation='0.35,-0.4,0.35'>
+	<Transform scale="0.06,0.4,0.06">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
+			</Appearance>
+			<Cylinder></Cylinder>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- picior dreapta fata -->
+<Transform translation='-0.35,-0.4,0.35'>
+	<Transform scale="0.06,0.4,0.06">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
+			</Appearance>
+			<Cylinder></Cylinder>
+		</Shape>
+	</Transform>
+</Transform>
+
+</Scene>
+
+</X3D>
+
+</body>
+</html>

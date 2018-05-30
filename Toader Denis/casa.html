@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+</head>
+
+<body>
+
+
+<X3D width="1080" height="720">
+
+<Scene>
+
+<viewpoint class="viewpoint" id="front" position="10,14,17" orientation="1,0,0,-0.7"></viewpoint> 
+<viewpoint class="viewpoint" id="intrare" position="5,0.5,15" ></viewpoint> 
+<viewpoint class="viewpoint" id="bucatarie" position="11.5,0.5,5.5" ></viewpoint> 
+<viewpoint class="viewpoint" id="cam_mica" position="17,0.2,6.2" ></viewpoint> 
+<viewpoint class="viewpoint" id="baie" position="17,0.2,1.4" ></viewpoint>
+<viewpoint class="viewpoint" id="dormitor" position="17,0.2,-3.5" ></viewpoint>
+<viewpoint class="viewpoint" id="cam_mij" position="10,0.2,-3.4" ></viewpoint>
+<viewpoint class="viewpoint" id="sufr" position="4.3,0.2,-3.2" ></viewpoint>
+
+
+<!-- Perete lateral stanga -->
+<Transform scale="0.01,1,7">
+	<Shape>
+		<Appearance>
+			<Material diffuseColor="0.878, 1, 1" ></Material>
+		</Appearance>
+		<Box></Box>
+	</Shape>
+</Transform>
+
+<!-- Perete lateral spate-->
+	<Transform translation='0.5,0,-7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,1,0.5">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	
+	<!-- Geam sufr -->
+		<!-- Perete sus -->
+		<Transform translation='3,0.8,-7'>
+			<Transform rotation='0,1,0,1.5708'> 
+				<Transform scale="0.01,0.2,2">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="0.878, 1, 1" ></Material>
+						</Appearance>
+						<Box></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+		<!-- Perete jos -->
+		<Transform translation='3,-0.7,-7'>
+			<Transform rotation='0,1,0,1.5708'> 
+				<Transform scale="0.01,0.3,2">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="0.878, 1, 1" ></Material>
+						</Appearance>
+						<Box></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+		<!-- sticla -->
+		<Transform translation='3,0.1,-7'>
+			<Transform rotation='0,1,0,1.5708'> 
+				<Transform scale="0.09,0.5,2">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="0.2, 0.3, 0.7" transparency="0.8"></Material>
+						</Appearance>
+						<Box></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+	<!-- Sfarsit geam sufragerie -->
+
+	<!-- Perete sufr-cam mijloc -->
+	<Transform translation='6.5,0,-7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,1,1.5">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	
+	<!-- Geam cam mijloc -->
+		<!-- sus -->
+		<Transform translation='9.5,0.8,-7'>
+			<Transform rotation='0,1,0,1.5708'> 
+				<Transform scale="0.01,0.2,1.5">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="0.878, 1, 1" ></Material>
+						</Appearance>
+						<Box></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+		<!-- jos -->
+		<Transform translation='9.5,-0.7,-7'>
+			<Transform rotation='0,1,0,1.5708'> 
+				<Transform scale="0.01,0.3,1.5">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="0.878, 1, 1" ></Material>
+						</Appearance>
+						<Box></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+		<!-- sticla -->
+		<Transform translation='9.5,0.1,-7'>
+			<Transform rotation='0,1,0,1.5708'> 
+				<Transform scale="0.09,0.5,1.5">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="0.2, 0.3, 0.7" transparency="0.8"></Material>
+						</Appearance>
+						<Box></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+	<!-- Sfarsit geam cam mijloc -->
+	
+	<!-- Perete cam mijloc-dorm -->
+	<Transform translation='12.5,0,-7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,1,1.5">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	
+	<!-- Geam dormitor -->
+		<!-- sus -->
+		<Transform translation='16,0.8,-7'>
+			<Transform rotation='0,1,0,1.5708'> 
+				<Transform scale="0.01,0.2,2">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="0.878, 1, 1" ></Material>
+						</Appearance>
+						<Box></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+		<!-- jos -->
+		<Transform translation='16,-0.7,-7'>
+			<Transform rotation='0,1,0,1.5708'> 
+				<Transform scale="0.01,0.3,2">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="0.878, 1, 1" ></Material>
+						</Appearance>
+						<Box></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+		<!-- Sticla -->
+		<Transform translation='16,0.1,-7'>
+			<Transform rotation='0,1,0,1.5708'> 
+				<Transform scale="0.09,0.5,2">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="0.2, 0.3, 0.7" transparency="0.8"></Material>
+						</Appearance>
+						<Box></Box>
+					</Shape>
+				</Transform>
+			</Transform>
+		</Transform>
+	
+	<!-- Perete dorm-colt -->
+	<Transform translation='19,0,-7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,1,1">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	
+<!-- end perete lateral spate
+
+<!-- Perete lateral dreapta-->
+<Transform translation='20,0,0'>
+	<Transform scale="0.01,1,7">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.878, 1, 1" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Perete lateral fata-colt-drepta-->
+<Transform translation='19,0,7'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,1">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.878, 1, 1" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+<!--geam-cam mica-->
+	<!-- sus -->
+	<Transform translation='16.5,0.8,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,0.2,1.5">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	<!-- jos -->
+	<Transform translation='16.5,-0.7,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,0.3,1.5">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	<!-- sticla -->
+	<Transform translation='16.5,0.1,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.09,0.5,1.5">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.2, 0.3, 0.7" transparency="0.8"></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	
+<!--mijloc-->
+<Transform translation='12,0,7'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,3">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.878, 1, 1" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+<!--geam-bucatarie-->
+	<!-- sus -->
+	<Transform translation='8,0.8,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,0.2,1">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	<!-- jos-->
+	<Transform translation='8,-0.7,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,0.3,1">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	<!-- sticla-->
+	<Transform translation='8,0.1,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.09,0.5,1">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.2, 0.3, 0.7" transparency="0.8"></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	
+<!-- langa usa-->
+<Transform translation='5,0,7'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.878, 1, 1" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+
+<!-- Perete lateral fata-colt-stanga-->
+<Transform translation='0.7,0,7'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,0.7">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.878, 1, 1" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Podea -->
+<Transform translation='10,-1,0'>
+	<Transform rotation='0,0,1,1.5708'> 
+		<Transform scale="0.01,10,7">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.902, 0.902, 0.980" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!-- Perete interior intrare colt-->
+<Transform translation='5,0,6'>
+	<Transform scale="0.01,1,1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+<!-- Perete interior intrare usa-->
+<Transform translation='5,0,3'>
+	<Transform scale="0.01,1,1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!--Perete hol-buc-cam mica-->
+<Transform translation='9.5,0,2'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,4.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Perete baie-cam mica-->
+<Transform translation='17.5,0,3'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!-- Perete ldespartitor cam mica->buc -->
+<Transform translation='14,0,4.5'>
+	<Transform scale="0.01,1,2.5">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+	
+<!--Perete hol-sufr-->
+<Transform translation='7,0,-1'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Perete hol-sufr->colt-->
+<Transform translation='2,0,-1'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Perete hol-cam mijloc->dorm -->
+<Transform translation='12,0,-1'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Perete dorm-baie -->
+<Transform translation='17.5,0,-1'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!-- Perete intrare baie->cam mica-->
+<Transform translation='15,0,2'>
+	<Transform scale="0.01,1,1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Perete intrare baie->dorm -->
+<Transform translation='15,0,-0.5'>
+	<Transform scale="0.01,1,0.5">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Perete dorm->cam mijloc-->
+<Transform translation='13,0,-4'>
+	<Transform scale="0.01,1,3">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.878, 1, 1" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Perete cam mijloc->sufr-->
+<Transform translation='7,0,-4'>
+	<Transform scale="0.01,1,3">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.878, 1, 1" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Obiecte -->
+<!-- PATURI -->
+	<!-- dormitor -->
+	<Transform translation='14.5,-0.65,-4.8'>
+		<Transform scale="1.5,0.5,1">
+			<inline url="pat.x3d"> </inline>
+		</Transform>
+	</Transform>
+	<!-- cam mijloc -->
+	<Transform translation='8,-0.65,-4.8'>
+		<Transform scale="1,0.5,1">
+			<inline url="pat.x3d"> </inline>
+		</Transform>
+	</Transform>
+	<!-- cam mica -->
+	<Transform translation='17,-0.65,4.25'>
+		<Transform scale="1,0.5,0.6">
+			<inline url="pat.x3d"> </inline>
+		</Transform>
+	</Transform>
+
+<!-- MOBILA -->
+	<!-- dormitor -->
+	<Transform translation='19.5,-0.1,-5.5'>
+		<Transform rotation='0,1,0,-1.5708'> 
+			<Transform scale="1,0.6,1">
+				<inline url="mobila.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<!-- cam mijloc -->
+	<Transform translation='12.5,-0.1,-5.5'>
+		<Transform rotation='0,1,0,-1.5708'> 
+			<Transform scale="1,0.6,1">
+				<inline url="mobila.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<!-- cam mica -->
+	<Transform translation='19.5,-0.1,3.5'>
+		<Transform rotation='0,1,0,-1.5708'> 
+			<Transform scale="0.5,0.6,1">
+				<inline url="mobila.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	
+<!--  MASA -->
+	<!-- Bucatarie -->
+	<Transform translation='8,0,3'>
+		<Transform rotation='0,1,0,1.5708'>
+			<Transform scale="1,1,1">
+				<inline url="masa.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<!-- cam mica -->
+	<Transform translation='19,-0.3,6.4'>
+		<Transform scale="1,0.65,0.35">
+			<inline url="masa.x3d"> </inline>
+		</Transform>
+	</Transform>
+	<!-- cam mij-->
+	<Transform translation='10.4,-0.3,-6.4'>
+		<Transform scale="1,0.65,0.35">
+			<inline url="masa.x3d"> </inline>
+		</Transform>
+	</Transform>
+	
+<!-- Scaun -->
+	<!-- Bucatarie -->
+	<Transform translation='6,-0.3,3'>
+		<Transform rotation='0,1,0,1.5708'>
+			<Transform scale="0.8,0.8,0.8">
+				<inline url="scaun.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<Transform translation='7,-0.3,4.5'>
+		<Transform rotation='0,1,0,3.1416'>
+			<Transform scale="0.8,0.8,0.8">
+				<inline url="scaun.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<Transform translation='9,-0.3,4.5'>
+		<Transform rotation='0,1,0,3.1416'>
+			<Transform scale="0.8,0.8,0.8">
+				<inline url="scaun.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<Transform translation='10,-0.3,3'>
+		<Transform rotation='0,1,0,-1.5708'>
+			<Transform scale="0.8,0.8,0.8">
+				<inline url="scaun.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	
+<!-- CANAPEA sufr-->
+<Transform translation='2.5,-0.5,-1.7'>
+	<Transform scale="1,1,1">
+		<inline url="canapea.x3d"> </inline>
+	</Transform>
+</Transform>
+<Transform translation='0.68,-0.5,-4'>
+	<Transform rotation='0,1,0,-1.5708'>
+		<Transform scale="1.5,1,1">
+			<inline url="canapea.x3d"> </inline>
+		</Transform>
+	</Transform>
+</Transform>
+	
+<!-- Masa tv -->
+<Transform translation='5.8,-0.5,-5.7'>
+	<Transform rotation='0,1,0,2.5'> 
+		<Transform scale="1,0.2,0.4">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.118, 0.565, 1.000" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+<!-- televizor -->
+<Transform translation='5.8,0,-5.7'>
+	<Transform rotation='0,1,0,2.5'> 
+		<Transform scale="0.7,0.6,0.1">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.3, 0.3, 0.3" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+	
+<!-- laptop -->
+	<!-- tastatura -->
+	<Transform translation='10.4,-0.2,-6.2'>
+		<Transform scale="0.3,0.02,0.2">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.3, 0.3, 0.3" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+	<!-- ecran -->
+	<Transform translation='10.4,0,-6.4'>
+		<Transform rotation='1,0,0,1.5708'>
+			<Transform scale="0.3,0.02,0.2">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="00.000, 0.749, 1.000" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+
+<!-- baie -->
+	<Transform translation='17.5,-0.9,2.35'>
+		<Transform rotation='0,1,0,1.5708'>
+			<Transform scale="1,1,2.5">
+				<inline url="vana.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<Transform translation='19.2,-0.7,-0.35'>
+		<Transform rotation='0,1,0,-1.5708'>
+			<Transform scale="0.8,0.6,0.8">
+				<inline url="wc.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<Transform translation='19.5,-0.3,1'>
+		<Transform rotation='0,1,0,-1.5708'>
+			<Transform scale="0.5,0.7,0.5">
+				<inline url="ghiuveta.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+
+<!-- Bucatarie elemente --->
+	<Transform translation='5.5,0,6.5'>
+		<Transform rotation='0,1,0,1.5708'>
+			<Transform scale="1,1,1">
+				<inline url="frigider.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<Transform translation='13.5,-0.5,6.5'>
+		<Transform rotation='0,1,0,-1.5708'>
+			<Transform scale="1,1,1">
+				<inline url="aragaz.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	<Transform translation='13.5,-0.5,4'>
+		<Transform rotation='0,1,0,-1.5708'>
+			<Transform scale="0.85,1,1">
+				<inline url="mobilaBucatarie.x3d"> </inline>
+			</Transform>
+		</Transform>
+	</Transform>
+	
+</Scene>
+
+</X3D>
+
+<button onclick="document.getElementById('front').setAttribute('set_bind','true');" style="font-size:26px;">Front</button>
+<button onclick="document.getElementById('intrare').setAttribute('set_bind','true'); " style="font-size:26px;">Intrare </button>
+<button onclick="document.getElementById('bucatarie').setAttribute('set_bind','true');" style="font-size:26px;">Bucatarie</button>
+<button onclick="document.getElementById('cam_mica').setAttribute('set_bind','true');" style="font-size:26px;">Cam mica </button>
+<button onclick="document.getElementById('baie').setAttribute('set_bind','true');" style="font-size:26px;">Baie </button>
+<button onclick="document.getElementById('dormitor').setAttribute('set_bind','true');" style="font-size:26px;">Dormitor </button>
+<button onclick="document.getElementById('cam_mij').setAttribute('set_bind','true');" style="font-size:26px;">Cam_mij </button>
+<button onclick="document.getElementById('sufr').setAttribute('set_bind','true');" style="font-size:26px;">Sufragerie</button>
+
+
+<script src="casaJS.js"></script>
+
+</body>
+</html>
