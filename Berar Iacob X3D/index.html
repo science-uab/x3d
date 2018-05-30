@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>X3DOM App Berar Iacob</title>
+
+    <script type="text/javascript" src="assets/x3dom.js"></script>
+    <!-- <link rel="stylesheet" href="assets/x3dom.css"> -->
+    <link rel="stylesheet" href="Public/css/style.css">
+</head>
+
+<body>
+
+
+    <x3d width='100%' height='900px'>
+        <scene>
+            <!-- Podea -->
+            <Transform scale='100 1 100'>
+                <shape DEF="qub">
+                    <appearance>
+                        <imagetexture url="assets/images/parchet.jpg" />
+                    </appearance>
+                    <box></box>
+                </shape>
+            </Transform>
+
+            <!-- Masa Bucatarie -->
+            <Transform translation='0 15 -40'>
+                <Transform scale='30 0.5 15'>
+                    <shape>
+                        <appearance>
+                            <ImageTexture url="assets/images/masa_bucatarie.jpg"></ImageTexture>
+                        </appearance>
+                        <box> </box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Mobila Bucatarie -->
+            <Transform translation='49 15 -90'>
+                    <Transform scale='48 0.5 8'>
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="assets/images/blat_bucatatie.jpg"></ImageTexture>
+                            </appearance>
+                            <box> </box>
+                        </shape>
+                    </Transform>
+                </Transform>
+
+            <!-- Perete Baie -->
+            <Transform translation='0 25 100'>
+                <Transform scale='100 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete intrare -->
+            <Transform translation='50 25 -100'>
+                <Transform scale='50 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete intrare T -->
+            <Transform translation='-40 25 -100'>
+                <Transform scale='10 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Usa Intrare -->
+            <Transform translation='-65 25 -100'>
+                <Transform scale='15 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/usa_intrare.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Hol Exterior -->
+            <Transform translation='-100 25 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='100 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Camera Mica Stanga Geam  -->
+            <Transform translation='100 25 85'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='15 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Geam Camera Mica  -->
+            <Transform translation='100 30 63'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='8 13 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Geam Camera Mica 2  -->
+            <Transform translation='100 30 46'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='8 13 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+
+            <!-- Perete Camera Mica Balcon Sub Geam  2 -->
+            <Transform translation='100 8 54'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='16 9 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+
+            <!-- Perete Camera Mica Balcon Sus Geam  2 -->
+            <Transform translation='100 46 54'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='16 3.9 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Balcon Hol 2  -->
+            <Transform translation='100 25 -93'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='35 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+
+            <!-- Perete Camera Mica Balcon 2  -->
+            <Transform translation='100 25 3'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='35 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+
+            <!-- Usa Camera Mare -->
+            <Transform translation='100 25 -45'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='13 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/usa_balcon.png" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+
+            <!-- Geam Camera Mare  -->
+            <Transform translation='100 30 -136'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='8 13 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Geam Camera Mare 2  -->
+            <Transform translation='100 30 -154'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='8 13 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Geam Camera Mare 3  -->
+            <Transform translation='100 30 -172'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='8 13 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <material ddiffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+
+            <!-- Perete Camera Mare 2  -->
+            <Transform translation='100 25 -190'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='10 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+
+            <!-- Perete Balcon 2 Sub Geam -->
+            <Transform translation='100 8 -155'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='27 9 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Balcon 2 Sus Geam -->
+            <Transform translation='100 46.5 -155'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='27 3.5 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Podea Camera Mare-->
+            <Transform translation='30 0 -150'>
+                <Transform scale='-70 1 -50'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/parchet.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Birou -->
+            <Transform translation='80 15 -108'>
+                <Transform scale='14 0.5 7'>
+                    <shape>
+                        <appearance>
+                            <ImageTexture url="assets/images/birou1.jpg"></ImageTexture>
+                        </appearance>
+                        <box> </box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Scaun Birou -->
+            <Transform translation="80 8 -130">
+                <Transform scale="5 5 5">
+                    <shape>
+                        <appearance>
+                            <ImageTexture url="assets/images/scaun.jpg"></ImageTexture>
+                        </appearance>
+                        <cylinder> </cylinder>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Pat Camera Mare -->
+            <Transform translation="-18 5 -155">
+                <Transform scale="20 3 15">
+                    <shape>
+                        <appearance>
+                            <ImageTexture url="assets/images/pat.jpg"></ImageTexture>
+                        </appearance>
+                        <box> </box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Camera Mare - Hol-->
+            <Transform translation='-90 25 -100'>
+                <Transform scale='10 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Usa Camera Mare -->
+            <Transform translation='-15 25 -100'>
+                <Transform scale='15 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/usa_interioara.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Stanga Camera Mare -->
+            <Transform translation='30 25 -200'>
+                <Transform scale='70 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Camera Mare Exterior -->
+            <Transform translation='-40 25 -150'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='50 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Camera Mica - Hol-->
+            <Transform translation='50 25 10'>
+                <Transform scale='50 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Pat Camera Mica -->
+            <Transform translation="30 5 75">
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale="20 3 15">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="assets/images/pat2.jpg"></ImageTexture>
+                            </appearance>
+                            <box> </box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Birou Camera Mica -->
+            <Transform translation='80 15 20'>
+                <Transform scale='14 0.5 7'>
+                    <shape>
+                        <appearance>
+                            <ImageTexture url="assets/images/birou.jpg"></ImageTexture>
+                        </appearance>
+                        <box> </box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Scaun Birou Camera Mica -->
+            <Transform translation="80 8 40">
+                <Transform scale="5 5 5">
+                    <shape>
+                        <appearance>
+                            <ImageTexture url="assets/images/scaun2.jpg"></ImageTexture>
+                        </appearance>
+                        <cylinder> </cylinder>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Camera Mica Baie -->
+            <Transform translation='-40 25 55'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='45 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Chiuveta -->
+            <Transform translation='-93 15 50'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='10 0.5 7'>
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="assets/images/chiuveta_baie.jpg"></ImageTexture>
+                            </appearance>
+                            <box> </box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- WC -->
+            <Transform translation='-93 5 80'>
+                    <Transform rotation='0 1 0 1.57'>
+                        <Transform scale='6 0.5 8'>
+                            <shape>
+                                <appearance>
+                                    <ImageTexture url="assets/images/toilet.jpg"></ImageTexture>
+                                </appearance>
+                                <box> </box>
+                            </shape>
+                        </Transform>
+                    </Transform>
+                </Transform>
+
+            <!-- Usa Camera Mica -->
+            <Transform translation='-18 25 10'>
+                <Transform scale='18 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/usa_interioara.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+
+
+            <!-- Perete Camera Mica + Baie T -->
+            <Transform translation='-40 25 10'>
+                <Transform scale='5 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+
+            <!-- Usa Baie -->
+            <Transform translation='-63 25 10'>
+                <Transform scale='18 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/usa_interioara.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Usa Baie -->
+            <Transform translation='-90 25 10'>
+                <Transform scale='10 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+
+            <!-- Podea Balcon -->
+            <Transform translation='130 0 -45'>
+                <Transform scale='30 1 55'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/gresie_balcon.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Dreapta Balcon-->
+            <Transform translation='130 25 10'>
+                <Transform scale='30 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Stanga Balcon-->
+            <Transform translation='130 25 -100'>
+                <Transform scale='30 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="assets/images/lavabila.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Balcon Geam  -->
+            <Transform translation='160 25 -6'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='16 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+
+            <!-- Geam Balcon  -->
+            <Transform translation='160 30 -30'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='8 13 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Geam Balcon 2  -->
+            <Transform translation='160 30 -49'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='8 13 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Geam Balcon 3  -->
+            <Transform translation='160 30 -68'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='8 13 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <material ddiffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Balcon Geam 2  -->
+            <Transform translation='160 25 -88'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='12 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+
+            <!-- Perete Balcon Sub Geam  -->
+            <Transform translation='160 9 -48'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='28 8 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+            <!-- Perete Balcon Sus Geam  -->
+            <Transform translation='160 46.5 -48'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='28 3.5 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/lavabila.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+
+        </scene>
+
+    </x3d>
+
+</body>
+
+</html>
