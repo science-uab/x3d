@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+</head>
+
+<body>
+
+
+<X3D width="1920" height="1080">
+
+<Scene>
+
+<!-- podea -->
+<Transform scale="0.6,0.1,1">
+	<Shape>
+		<Appearance>
+			<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+		</Appearance>
+		<Box></Box>
+	</Shape>
+</Transform>
+
+<!-- stanga -->
+<Transform translation='-0.5,0.2,0'>
+	<Transform rotation='0,0,1,1.5708'> 
+		<Transform scale="0.2,0.1,1">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+<!-- dreapta -->
+<Transform translation='0.5,0.2,0'>
+	<Transform rotation='0,0,1,1.5708'> 
+		<Transform scale="0.2,0.1,1">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+<!-- spate -->
+<Transform translation='0,0.2,-0.9'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.1,0.2,0.4">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+<!-- fata -->
+<Transform translation='0,0.2,0.9'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.1,0.2,0.4">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+	
+</Scene>
+
+</X3D>
+
+</body>
+</html>
