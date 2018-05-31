@@ -17,6 +17,34 @@
 
     <x3d width='100%' height='900px'>
         <scene>
+
+            <!-- Acoperis -->
+            <Transform translation='-10 60 -50'>
+                <Transform rotation='0 0 1 0.10'>
+                    <Transform scale='120 1 150'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="assets/images/roof.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+                <!-- Perete acoperis -->
+                <Transform translation='110 -1 0'>
+                    <Transform rotation='0 1 0 1.57'>
+                        <Transform scale='150 11 1'>
+                            <shape DEF="qub">
+                                <appearance>
+                                    <imagetexture url="assets/images/3.jpg" />
+                                </appearance>
+                                <box></box>
+                            </shape>
+                        </Transform>
+                    </Transform>
+                </Transform>
+
+            </Transform>
             <!-- Podea -->
             <Transform scale='100 1 100'>
                 <shape DEF="qub">
@@ -41,15 +69,15 @@
 
             <!-- Mobila Bucatarie -->
             <Transform translation='49 15 -90'>
-                    <Transform scale='48 0.5 8'>
-                        <shape>
-                            <appearance>
-                                <ImageTexture url="assets/images/blat_bucatatie.jpg"></ImageTexture>
-                            </appearance>
-                            <box> </box>
-                        </shape>
-                    </Transform>
+                <Transform scale='48 0.5 8'>
+                    <shape>
+                        <appearance>
+                            <ImageTexture url="assets/images/blat_bucatatie.jpg"></ImageTexture>
+                        </appearance>
+                        <box> </box>
+                    </shape>
                 </Transform>
+            </Transform>
 
             <!-- Perete Baie -->
             <Transform translation='0 25 100'>
@@ -494,17 +522,17 @@
 
             <!-- WC -->
             <Transform translation='-93 5 80'>
-                    <Transform rotation='0 1 0 1.57'>
-                        <Transform scale='6 0.5 8'>
-                            <shape>
-                                <appearance>
-                                    <ImageTexture url="assets/images/toilet.jpg"></ImageTexture>
-                                </appearance>
-                                <box> </box>
-                            </shape>
-                        </Transform>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='6 0.5 8'>
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="assets/images/toilet.jpg"></ImageTexture>
+                            </appearance>
+                            <box> </box>
+                        </shape>
                     </Transform>
                 </Transform>
+            </Transform>
 
             <!-- Usa Camera Mica -->
             <Transform translation='-18 25 10'>
