@@ -15,12 +15,19 @@
 	
 	<body>
 	
-	<p>UI version number: 2018.05.28</p>
+	<p>UI version number: 2018.05.31</p>
 	
 	<x3d width='800px' height='600px'> 
         <scene> 
-			<viewpoint fieldofview = "1.57" position = "-2 1.7 15" orientation = "0 -1 0 0.5" id = "id_viewpoint">
-			</viewpoint>
+			<viewpoint id="dreapta" fieldofview = "1.57" position = "5 1.7 15" orientation = "0 1 0 0"></viewpoint>
+			<Viewpoint id="fata" fieldofview = "1.57" position = "-15 1.7 0" orientation = "0 -1 0 1.57"></Viewpoint>
+			<Viewpoint id="spate" fieldofview = "1.57" position = "20 1.7 5" orientation = "0 1 0 1.57"></Viewpoint>
+			<Viewpoint id="stanga" fieldofview = "1.57" position = "0 1.7 -15" orientation = "0 -1 0 3.14"></Viewpoint>
+		
+			<viewpoint id="spate_dreapta" fieldofview = "1.57" position = "15 1.7 15" orientation = "0 1 0 0.785"></viewpoint>
+			<Viewpoint id="fata_dreapta" fieldofview = "1.57" position = "-10 1.7 10" orientation = "0 -1 0 0.785"></Viewpoint>
+			<Viewpoint id="spate_stanga" fieldofview = "1.57" position = "15 1.7 -5" orientation = "0 1 0 2.355"></Viewpoint>
+			<Viewpoint id="fata_stanga" fieldofview = "1.57" position = "-10 1.7 -10" orientation = "0 -1 0 2.355"></Viewpoint>
 		
 			
 		<!-- begin Cladirea veche -->
@@ -1058,7 +1065,21 @@
 				
     </x3d>
 	
+	<p>	<button onclick="document.getElementById('fata').setAttribute('set_bind','true');">Fata</button> </p>
+    <p>	<button onclick="document.getElementById('stanga').setAttribute('set_bind','true');">Stanga </button> </p>
+    <p>	<button onclick="document.getElementById('dreapta').setAttribute('set_bind','true');">Dreapta</button> </p>
+    <p>	<button onclick="document.getElementById('spate').setAttribute('set_bind','true');">Spate </button> </p>
+   
+	<p> . </p>
+	
+	<p>	<button onclick="document.getElementById('fata_dreapta').setAttribute('set_bind','true');">Fata - dreapta</button> </p>
+    <p>	<button onclick="document.getElementById('fata_stanga').setAttribute('set_bind','true');">Fata - stanga </button> </p>
+    <p>	<button onclick="document.getElementById('spate_dreapta').setAttribute('set_bind','true');">Spate - dreapta</button> </p>
+    <p>	<button onclick="document.getElementById('spate_stanga').setAttribute('set_bind','true');">Spate - stanga</button> </p>
+    
+	
 	<p id = "id_orientation"></p>
+	<p id = "id_viewpoint"></p>
 	
 	<!-- script src = "orientare.js" -->
 	<script src = "orientare_xz.js">
