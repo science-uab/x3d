@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+</head>
+
+<body>
+
+
+<X3D width="1920" height="1080">
+
+<Scene>
+
+<!-- Corp1 -->
+<Transform scale="1,1.5,0.5">
+	<Shape>
+		<Appearance>
+			<Material diffuseColor="0.804, 0.522, 0.247" ></Material>
+		</Appearance>
+		<Box></Box>
+	</Shape>
+</Transform>
+
+<!-- Corp2 -->
+<Transform translation='2,1,0'>
+	<Transform scale="1,0.5,0.5">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.804, 0.522, 0.247" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Corp2 -->
+<Transform translation='2,1,0'>
+	<Transform scale="1,0.5,0.5">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.804, 0.522, 0.247" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Corp3 -->
+<Transform translation='3.5,0,0'>
+	<Transform scale="0.5,1.5,0.5">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.804, 0.522, 0.247" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Placaj spate -->
+<Transform translation='2,-0.5,-0.3'>
+	<Transform scale="1,1,0.2">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.85, 0.57, 0.29" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- raft -->
+<Transform translation='2,0,0.1'>
+	<Transform scale="1,0.05,0.4">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.804, 0.522, 0.247" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- USI -->
+<!-- mijloc -->
+	<Transform translation='1.48,1,0.5'>
+		<Transform scale="0.48,0.4,0.01">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.7, 0.42, 0.14" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+	
+	<!-- mijloc dreapta-->
+	<Transform translation='2.52,1,0.5'>
+		<Transform scale="0.48,0.4,0.01">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.7, 0.42, 0.14" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+	
+<!-- dulap stanga -->
+	<!-- stanga -->
+	<Transform translation='-0.5,0,0.5'>
+		<Transform scale="0.45,1.4,0.01">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.7, 0.42, 0.14" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+	<!-- dreapta -->
+	<Transform translation='0.5,0,0.5'>
+		<Transform scale="0.45,1.4,0.01">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.7, 0.42, 0.14" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+	
+<!-- dulap dreapta -->
+	<Transform translation='3.5,0,0.5'>
+		<Transform scale="0.45,1.4,0.01">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.7, 0.42, 0.14" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+
+
+</Scene>
+
+</X3D>
+
+</body>
+</html>
