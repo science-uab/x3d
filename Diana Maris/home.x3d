@@ -1,0 +1,341 @@
+<x3d>
+	<head></head>
+		<Scene>
+			<NavigationInfo avatarSize='0.01 1.7 0.2' headlight='false' speed='2' type='"EXAMINE"'/>
+
+			<Group def="FLOOR">
+				<Shape def="floor">
+					<Appearance def="WALL">
+		          		<ImageTexture url="wall1.jpg"/>
+		        	</Appearance>
+					<Extrusion convex='false' crossSection='-6.225 4.8 -6.225 -4.8 6.225 -4.8 6.225 4.8' solid='false' spine='0 0.1 0 0 0.15 0'/>
+				</Shape>
+
+
+				<Shape def="floor_faceset">
+					<Appearance>
+		          		<ImageTexture url="floor.jpg"/>
+		        	</Appearance>
+
+		        	<IndexedFaceSet ccw='false' convex='false' solid="false" coordIndex='0 1 2 3'>
+		          		<Coordinate point='-6.2 0.16 4.7 -6.2 0.16 -4.7 6.2 0.16 -4.7 6.2 0.16 4.7'/>
+		        	</IndexedFaceSet>
+				</Shape>
+			</Group>
+
+
+
+			<Group def='front_side'>
+				<Transform DEF='Front_Side' translation='-1.4 0.15 4.725'>
+					<Group DEF='FRONT_WALLS'>
+						<Transform DEF='FRONT_LOWER' translation='0 0.4 0'>
+			            	<Shape>
+			              		<Appearance USE='WALL'/>
+			              		<Box size='9.65 0.80 0.15'/>
+			            	</Shape>
+			          	</Transform>
+
+			          	<Transform DEF='FRONT_LEFT' translation='-3.70 1.45 0'>
+				            <Shape>
+					             <Appearance USE='WALL'/>
+					             <Box size='2.25 1.3 0.15'/>
+				            </Shape>
+			          	</Transform>
+
+			          	<Transform DEF='FRONT_UPPER' translation='0 2.3 0'>
+			            	<Shape>
+			              		<Appearance USE='WALL'/>
+			              		<Box size='9.65 0.4 0.15'/>
+			            	</Shape>
+			          	</Transform>
+
+			          	<Transform DEF='FRONT_MIDDLE' translation='0.125 1.45 0'>
+			            	<Shape>
+			              		<Appearance USE='WALL'/>
+			              		<Box size='1.70 1.3 0.15'/>
+			            	</Shape>
+			          	</Transform>
+
+			          	<Transform DEF='FRONT_RIGHT' translation='3.83 1.45 0'>
+			            	<Shape>
+			              		<Appearance USE='WALL'/>
+			              		<Box size='-1.97 1.3 0.15'/>
+			            	</Shape>
+			          	</Transform>
+					</Group>
+
+					<Transform translation='-1.65 0.83 0'>
+			          	<Group DEF='WINDOW'>
+				            <Shape>
+				              	<Appearance DEF='WINDOWFRAME'>
+				                	<Material diffuseColor='.4 .3 .5'/>
+				              	</Appearance>
+				              	<Box size='1.85 0.06 0.06'/>
+				            </Shape>
+
+				            <Transform translation='0 1.24 0'>
+				              	<Shape>
+				                	<Appearance USE='WINDOWFRAME'/>
+				                	<Box size='1.85 0.06 0.06'/>
+				              	</Shape>
+				            </Transform>
+
+				            <Transform translation='-0.895 0.62 0'>
+				              	<Shape>
+				               		<Appearance USE='WINDOWFRAME'/>
+				                	<Box size='0.06 1.18 0.06'/>
+				              	</Shape>
+				            </Transform>
+
+				            <Transform translation='0.895 0.62 0'>
+				              	<Shape>
+					                <Appearance USE='WINDOWFRAME'/>
+					                <Box size='0.06 1.18 0.06'/>
+				              	</Shape>
+				            </Transform>
+
+				            <Transform translation='0 0.62 0'>
+				              	<Shape>
+					                <Appearance USE='WINDOWFRAME'/>
+					                <Box size='0.06 1.18 0.06'/>
+				              	</Shape>
+				            </Transform>
+
+				            <Transform DEF='WINDOWGLASS' translation='0 0.62 0'>
+				              	<Shape>
+					                <Appearance DEF='GLASS'>
+					                  	<Material emissiveColor='0.757 0.804 0.804' shininess='0.5' transparency='0.5'/>
+					                </Appearance>
+				                	<Box size='1.73 1.18 0.005'/>
+				              	</Shape>
+				            </Transform>
+			          	</Group>
+			        </Transform>
+
+			        <Transform translation='1.9 0.83 0'>
+			          	<Group USE='WINDOW'/>
+			        </Transform>
+				</Transform>
+
+
+				<Transform DEF='SECOND_FRONT' translation='5.5 1.40 4.725'>
+					<Group>
+						<Shape DEF='RIGHTOFDOOR'>
+				            <Appearance USE='WALL'/>
+				            <Box size='1.5 2.5 0.15'/>
+				        </Shape>
+
+				        <Transform DEF='UPPEROFDOOR' translation='-1.43 1.09 0'>
+				            <Shape>
+				              <Appearance USE='WALL'/>
+				              <Box size='1.35 0.3 0.15'/>
+				            </Shape>
+				        </Transform>  
+					</Group>
+
+
+					<Transform DEF='FRONT_DOOR' translation='-1.39 0 0'>
+						<Transform DEF='FrontDoor' center='-0.45 0 0'>
+			    			<Shape>
+				              <Box size='1.35 2.45 0.1'/>
+				              <Appearance DEF='DOOR_COLOR'>
+				                <ImageTexture url="door.jpg"/>
+				              </Appearance>
+				            </Shape>
+			    		</Transform>
+
+			    		<Transform DEF='DOOR_KNOP1' translation='0.3 0 0.08'>
+			              	<Shape DEF='DOOR_LOCK'>
+				                <Sphere radius='0.05'/>
+				                <Appearance DEF='DOOR_LOCK_COLOR'>
+				                  <ImageTexture DEF='DoorKnobColor' url="doorknob.jpg"/>
+				                </Appearance>
+			              	</Shape>
+			            </Transform>
+
+			            <Transform DEF='DOOR_KNOP2' translation='0.3 0 -0.08'>
+			              	<Shape USE='DOOR_LOCK'/>
+			            </Transform>
+			            <CylinderSensor DEF='DoorSensorFront' description='front door' maxAngle='1.57'/>
+					</Transform>
+				</Transform>
+			</Group>
+
+
+
+			<Transform DEF='RIGHT_SIDE' rotation='0 1 0 1.57' translation='6.2 1.4 0'>
+				<Shape DEF='WALLBEFOREDOOR'>
+					 <Appearance USE='WALL'/>
+					 <Box size='9.3 2.5 0.15'/>
+			    </Shape>
+			</Transform>
+
+
+				<Transform DEF='LEFTSIDE' rotation='0 1 0 -1.57' translation='-6.15 1.4 2.675'>
+					<Shape DEF='RIGHT_OF_WINDOW'>
+				        <Appearance USE='WALL'/>
+				        <Box size='3.95 2.5 0.15'/>
+			    	</Shape>
+
+				    <Transform DEF='UPPER_OF_WINDOW' translation='-4.725 1.05 0'>
+				        <Shape>
+				          <Appearance USE='WALL'/>
+				          <Box size='5.5 0.4 0.15'/>
+				        </Shape>
+				    </Transform>
+
+				    <Transform DEF='UNDERWINDOW' translation='-4.725 -0.55 0'>
+				        <Shape>
+				          <Appearance USE='WALL'/>
+				          <Box size='5.5 1.4 0.15'/>
+				        </Shape>
+				    </Transform>
+
+				    <Transform DEF='LEFT_OF_WINDOW' translation='-5.225 0.5 0'>
+				        <Shape>
+				          <Appearance USE='WALL'/>
+				          <Box size='4.5 0.7 0.15'/>
+				        </Shape>
+				    </Transform>
+
+				    <Transform DEF='BATHROOM_WINDOW' scale='0.54 0.54 1' translation='-2.475 0.16 0'>
+				        <Group USE='WINDOW'/>
+				    </Transform>
+				</Transform>
+
+
+
+				<Transform DEF='BACKSIDE' rotation='0 1 0 3.14' translation='-0.675 1.4 -4.725'>
+					<Transform DEF='RIGHTMOSTWALL' translation='5 0 0'>
+				        <Shape>
+				          <Appearance USE='WALL'/>
+				          <Box size='1.1 2.5 0.15'/>
+				        </Shape>
+			    	</Transform>
+
+				    <Transform DEF='RIGHTWINDOW' translation='3.525 -0.42 0'>
+				        <Group USE='WINDOW'/>
+				    </Transform>
+
+				    <Transform DEF='RIGHTUPPERWALL' translation='0.775 1.05 0'>
+				        <Shape>
+				          <Appearance USE='WALL'/>
+				          <Box size='7.35 0.4 0.15'/>
+				        </Shape>
+				    </Transform>
+
+				    <Transform DEF='RIGHTLOWERWALL' translation='0.775 -0.85 0'>
+				        <Shape>
+				          <Appearance USE='WALL'/>
+				          <Box size='7.35 0.8 0.15'/>
+				        </Shape>
+				    </Transform>
+
+				    <Transform DEF='RIGHTMIDDLEWALL' translation='1.55 0.2 0'>
+				        <Shape>
+				          <Appearance USE='WALL'/>
+				          <Box size='2.1 1.3 0.15'/>
+				        </Shape>
+				    </Transform>
+
+				    <Transform DEF='MIDDLEWINDOW' scale='1.297 1 1' translation='-0.7 -0.42 0'>
+				        <Group USE='WINDOW'/>
+				    </Transform>
+
+				    <Transform DEF='MIDDLEWALL' translation='-2.4 0.2 0'>
+				        <Shape>
+				          <Appearance USE='WALL'/>
+				          <Box size='1 1.3 0.15'/>
+				        </Shape>
+				    </Transform>
+
+
+				    <Transform DEF='BACK_DOOR' translation='-3.35 -0.2 0'>
+				    	<Transform DEF='BackDoor' center='-0.45 0 0'>
+				          	<Shape>
+					            <Box size='0.9 2.1 0.1'/>
+					            <Appearance USE='DOOR_COLOR'/>
+				          	</Shape>
+
+				          	<Transform DEF='DOORKNOP1' translation='0.2 0 0.08'>
+				            	<Shape USE='DOOR_LOCK'/>
+				          	</Transform>
+
+				          	<Transform DEF='DOORKNOP2' translation='0.2 0 -0.08'>
+				           		<Shape USE='DOOR_LOCK'/>
+				          	</Transform>
+
+			          		<CylinderSensor DEF='DoorSensorBack' description='back door' maxAngle='1.57'/>
+			    		</Transform>
+			    	</Transform>
+
+			    	<Transform DEF='LEFTUPPERWALL' translation='-4.825 1.05 0'>
+				        <Shape>
+					          <Appearance USE='WALL'/>
+					          <Box size='4.23 0.4 0.15'/>
+				        </Shape>
+			    	</Transform>
+
+				    <Transform DEF='LEFT_OF_DOOR' translation='-5.3 -0.2 0'>
+				        <Shape>
+				          	<Appearance USE='WALL'/>
+				          	<Box size='3.25 2.1 0.15'/>
+				        </Shape>
+				    </Transform>
+				</Transform>
+
+
+				<Transform DEF='INSIDE_WALLS' translation='0 0.01 0'>
+					<Transform DEF='WALL1' rotation='0 1 0 1.57' translation='-1.6 1.5 3.2'>
+						<Shape>
+							 <Appearance USE='WALL'/>
+							 <Box size='3 2.3 0.15'/>
+					    </Shape>
+					</Transform>
+
+
+					 <Transform DEF='WALL2' translation='-4.4 1.5 1.5'>
+				        <Shape>
+				          	<Appearance USE='WALL'/>
+				          	<Box size='3.5 2.3 0.15'/>
+				        </Shape>
+				    </Transform>
+
+
+				    <Transform DEF='WALL3' translation='-2.6 1.5 -1'>
+				        <Shape>
+				          	<Appearance USE='WALL'/>
+				          	<Box size='7 2.3 0.15'/>
+				        </Shape>
+				    </Transform>
+
+				    <Transform DEF='WALL4' rotation='0 1 0 1.57' translation='2 1.5 -3'>
+						<Shape>
+							 <Appearance USE='WALL'/>
+							 <Box size='3.5 2.3 0.15'/>
+					    </Shape>
+					</Transform>
+				</Transform>
+
+				<Group DEF='ROOF'>
+					<Transform DEF='roof' translation='0 2.64 0'>
+				        <Shape>
+				          	<Appearance>
+				            	<ImageTexture url="roof.jpg"/>
+				          	</Appearance>
+
+				          	<Extrusion convex='false' creaseAngle='0.85' crossSection='-6.525 5.1 -6.525 -5.1 6.525 -5.1 6.525 5.1 -6.525 5.1' scale='1.0 1.0 1.01 1.01 0.01 0.01' solid='false' spine='0 0 0 0 0.2 0 0 0.8 0'/>
+				        </Shape>			
+			    	</Transform>
+
+			    	<Shape DEF='CEILING_FACESET'>
+				        <Appearance USE='WALL'/>
+				        <IndexedFaceSet ccw='false' convex='false' coordIndex='0 1 2 3' solid='false'>
+				         	<Coordinate point='-6.2 2.63 4.7 -6.2 2.63 -4.7 6.2 2.63 -4.7 6.2 2.63 4.7'/>
+				        </IndexedFaceSet>
+			    	</Shape>
+				</Group>
+
+				
+		</Scene>
+</x3d>
