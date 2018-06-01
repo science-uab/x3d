@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<Scene>
+
+		<Transform translation="0 -6 0">
+			<Shape>
+				<Appearance>
+					<material diffusecolor = "0.5 0.5 0.5" />
+				</Appearance>
+				<box size="1 8 1"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="-4 -6 0">
+			<Shape>
+				<Appearance>
+					<material diffusecolor = "0.5 0.5 0.5" />
+				</Appearance>
+				<box size="1 8 1"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="0 -6 4">
+			<Shape>
+				<Appearance>
+					<material diffusecolor = "0.5 0.5 0.5" />
+				</Appearance>
+				<box size="1 8 1"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="-4 -6 4">
+			<Shape>
+				<Appearance>
+					<material diffusecolor = "0.5 0.5 0.5" />
+				</Appearance>
+				<box size="1 8 1"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="-2 -2 2">
+			<Shape>
+				<Appearance>
+					<ImageTexture url="../images/chair.jpg"></ImageTexture>
+					<TextureTransform scale="-1, -1" ></TextureTransform>
+				</Appearance>
+				<box size="6 1 6"></box>
+			</Shape> 
+		</Transform>
+
+	</Scene>
+</X3D>

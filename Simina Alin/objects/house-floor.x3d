@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<Scene>
+		<Transform translation="-10 1 0">
+			<Shape>
+				<Appearance> 
+					<ImageTexture url="../images/hone.jpg"></ImageTexture>
+					<TextureTransform scale="3, 2" ></TextureTransform>
+				</Appearance>
+				<box size="220 2 40"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="0 1 85">
+			<Shape>
+				<Appearance> 
+					<ImageTexture url="../images/hone.jpg"></ImageTexture>
+					<TextureTransform scale="10, 10" ></TextureTransform>
+				</Appearance>
+				<box size="240 2 130"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="-80 1 175">
+			<Shape>
+				<Appearance> 
+					<ImageTexture url="../images/concrete.jpg"></ImageTexture>
+					<TextureTransform scale="10, 10" ></TextureTransform>
+				</Appearance>
+				<box size="56 2 50"></box>
+			</Shape> 
+		</Transform>
+		
+	</Scene>
+</X3D>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<Scene>
+		<Transform translation="0 0 0">
+			<Shape>
+				<Appearance> 
+					<material diffusecolor = "1 1 1"/>
+				</Appearance>
+				<box size="15 30 15"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="8 10 0">
+			<Shape>
+				<Appearance> 
+					<material diffusecolor = "0.7 0.7 0.7"/>
+				</Appearance>
+				<box size="1 10 15"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="8 -5 0">
+			<Shape>
+				<Appearance> 
+					<material diffusecolor = "0.7 0.7 0.7"/>
+				</Appearance>
+				<box size="1 17 15"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="8.5 10 -5">
+			<Shape>
+				<Appearance> 
+					<material diffusecolor = "0 0.5 0"/>
+				</Appearance>
+				<box size="0.5 1 4"></box>
+			</Shape> 
+		</Transform>
+
+		<Transform translation="8.5 0 -5">
+			<Shape>
+				<Appearance> 
+					<material diffusecolor = "0 0.5 0"/>
+				</Appearance>
+				<box size="0.5 1 4"></box>
+			</Shape> 
+		</Transform>
+
+	</Scene>
+</X3D>
