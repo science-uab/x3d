@@ -1,0 +1,1421 @@
+<!-- Samuila Tudor -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<!-- <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>  -->
+		<script type='text/javascript' src='x3d.js'> </script> 
+	    <!-- <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 	 -->
+	    <link rel='stylesheet' type='text/css' href='x3d.css'></link> 	
+	</head>
+	<body>
+		<p>UI Version no:2018.05.11.1</p>
+		<input type="button" id="move" onclick="myFunc()">
+		<x3d width="" height="94vh" style="width:100%">
+			
+			<scene>
+				<Viewpoint bind='false' centerOfRotation='0,0,0' description='""' fieldOfView='0.99' isActive='false' metadata='X3DMetadataObject' orientation='0,0,0,1' position='0,0,25' zFar='-1' zFar='-1' zNear='-1' zNear='-1' ></Viewpoint>
+				<!-- podea -->
+				<shape>
+					<appearance>
+						<imagetexture url="mosaic.jpg"></imagetexture>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 25 70 0 25 70 0 -25 -50 0 -25">
+					</indexedfaceset>
+				</shape>
+
+
+				<!-- perete staga  -->
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 25 -50 0 -25 -50 20 -25 -50 20 25">
+					</indexedfaceset>
+				</shape>
+
+				<transform translation = "-50 9 -15">
+					<transform scale="0.12 9 5">
+						<shape>
+							<appearance>
+								<imagetexture url="usaInterior.png"></imagetexture>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+
+				<!-- perete spate -->
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 -25 47 0 -25 47 20 -25 -50 20 -25">
+					</indexedfaceset>
+				</shape>
+				<shape>
+					<appearance>
+						<imagetexture url="faianta.jpg"></imagetexture>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "47 0 -25 70 0 -25 70 20 -25 47 20 -25">
+					</indexedfaceset>
+				</shape>
+
+				<!-- perete intre bucatarie si camera mare -->
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-20 0 25 -20 0 -7 -20 20 -7 -20 20 25">
+					</indexedfaceset>
+				</shape>
+
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-20 0 -7 -20 0 25 -20 20 25 -20 20 -7">
+					</indexedfaceset>
+				</shape>
+
+
+				<!-- perete intre camera mica si camera mare -->
+				<shape>
+					<appearance>
+						<material diffusecolor ="0.58 0.98 0.58" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "30 0 25 30 0 -7 30 20 -7 30 20 25">
+					</indexedfaceset>
+				</shape>
+
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "30 0 -7 30 0 25 30 20 25 30 20 -7 ">
+					</indexedfaceset>
+				</shape>
+
+
+				<!-- perete intre camera mica si baie -->
+
+				<shape>
+					<appearance>
+						<material diffusecolor ="0.58 0.98 0.58" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "45 0 -7 70 0 -7 70 20 -7 45 20 -7">
+					</indexedfaceset>
+				</shape>
+
+				<shape>
+					<appearance>
+						<!-- <material diffusecolor ="1 1 1" transparency="0"> -->
+							<imagetexture url="faianta.jpg"></imagetexture>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "70 0 -7 47 0 -7 47 20 -7 70 20 -7">
+					</indexedfaceset>
+				</shape>
+				
+
+				<!-- usa baie -->
+
+ 				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 8 9 -1 2 3 7 9 -1 4 5 6 7 -1">
+						<coordinate point = "47 0 -25 47 0 -19 47 18 -19 47 18 -11 47 0 -11 47 0 -7 47 20 -7 47 20 -11 47 20 -19 47 20 -25">
+					</indexedfaceset>
+				</shape>
+				<shape>
+					<appearance>
+						<imagetexture url="faianta.jpg"></imagetexture>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 8 9 -1 2 3 7 9 -1 4 5 6 7 -1">
+						<coordinate point = "47 0 -7 47 0 -11 47 18 -11 47 18 -19 47 0 -19 47 0 -25 47 20 -25 47 20 -19 47 20 -11 47 20 -7">
+					</indexedfaceset>
+				</shape>
+
+				<transform translation = "47 9 -15">
+					<transform scale="0.12 9 4">
+						<shape>
+							<appearance>
+								<imagetexture url="usaInterior.png"></imagetexture>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "58.5 0 -16">
+					<transform scale="11.5 0.12 9">
+						<shape>
+							<appearance>
+								<imagetexture url="faianta.jpg"></imagetexture>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+
+
+				<!-- usa camera mica -->
+				<shape>
+					<appearance>
+						<material diffusecolor ="0.58 0.98 0.58" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 8 9 -1 2 3 7 9 -1 4 5 6 7 -1">
+						<coordinate point = "30 0 -7 36 0 -7 36 18 -7 45 18 -7 45 0 -7 45 0 -7 45 20 -7 45 20 -7 36 20 -7 30 20 -7">
+					</indexedfaceset>
+				</shape>
+
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 8 9 -1 2 3 7 9 -1 4 5 6 7 -1">
+						<coordinate point = "47 0 -7 45 0 -7 47 18 -7 36 18 -7 36 0 -7 30 0 -7 30 20 -7 36 20 -7 45 20 -7 47 20 -7">
+					</indexedfaceset>
+				</shape>
+
+
+				<transform translation = "40.5 9 -7">
+					<transform scale="4.5 9 0.12">
+						<shape>
+							<appearance>
+								<imagetexture url="usaInterior.png"></imagetexture>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+
+
+				<!-- usa hol camera mare -->
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 8 9 -1 2 3 7 9 -1 4 5 6 7 -1">
+						<coordinate point = "-20 0 -25 -20 0 -19 -20 18 -19 -20 18 -10 -20 0 -10 -20 0 -7 -20 20 -7 -20 20 -10 -20 20 -19 -20 20 -25">
+					</indexedfaceset>
+				</shape>
+
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="1 0 9 8 -1 9 7 3 2 -1 7 6 5 4 -1">
+						<coordinate point = "-20 0 -25 -20 0 -19 -20 18 -19 -20 18 -10 -20 0 -10 -20 0 -7 -20 20 -7 -20 20 -10 -20 20 -19 -20 20 -25">
+					</indexedfaceset>
+				</shape>
+
+				<transform translation = "-20 9 -15">
+					<transform scale="0.12 9 5">
+						<shape>
+							<appearance>
+								<imagetexture url="usaInterior.png"></imagetexture>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+
+				<!-- camera mare hol mic -->
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 8 9 -1 2 3 7 9 -1 4 5 6 7 -1">
+						<coordinate point = "30 0 -25 30 0 -23 30 18 -23 30 18 -11 30 0 -11 30 0 -7 30 20 -7 30 20 -11 30 20 -23 30 20 -25">
+					</indexedfaceset>
+				</shape>
+
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="9 8 1 0 -1 9 7 3 2 -1 7 6 5 4 -1">
+						<coordinate point = "30 0 -25 30 0 -23 30 18 -23 30 18 -11 30 0 -11 30 0 -7 30 20 -7 30 20 -11 30 20 -23 30 20 -25">
+					</indexedfaceset>
+				</shape>
+
+				
+				
+
+
+				<!-- perete hol bucatarie -->
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="0 1 8 9 -1 2 3 7 9 -1 4 5 6 7 -1">
+						<coordinate point = "-50 0 -7 -40 0 -7 -40 18 -7 -32 18 -7 -32 0 -7 -20 0 -7 -20 20 -7 -32 20 -7 -40 20 -7 -50 20 -7">
+					</indexedfaceset>
+				</shape>
+
+				<shape>
+					<appearance>
+						<material diffusecolor ="1 1 1" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="9 8 1 0 -1 9 7 3 2 -1 7 6 5 4 -1">
+						<coordinate point = "-50 0 -7 -40 0 -7 -40 18 -7 -32 18 -7 -32 0 -7 -20 0 -7 -20 20 -7 -32 20 -7 -40 20 -7 -50 20 -7">
+					</indexedfaceset>
+				</shape>
+
+
+				<!-- perete baie exterior -->
+				<shape>
+					<appearance>
+						<imagetexture url="faianta.jpg"></imagetexture>
+					</appearance>
+					<indexedfaceset coordIndex = "0 1 10 11 -1 1 4 3 2 -1 4 5 6 7 -1 7 10 9 8">
+						<coordinate point = "70 0 -25 70 0 -18 70 14 -18 70 14 -14 70 0 -14 70 0 -7 70 20 -7 70 20 -14 70 18 -14 70 18 -18 70 20 -18 70 20 -25">
+					</indexedfaceset>
+				</shape>
+				<transform translation = "70 16 -16">
+					<transform scale="0.1 2 2">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 1" transparency="0.5"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+				<!-- pat A -->
+				<transform translation = "59 3 -1">
+					<transform scale="10 3 5">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "59 6.01 -1">
+					<transform scale="9.5 1 4.5">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "65 8 -1">
+					<transform scale="1 4 1" rotation="1 0 0 1.57">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+
+							<cylinder></cylinder>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+
+				<!-- pat t -->
+				<transform translation = "59 3 18">
+					<transform scale="10 3 5">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+				
+				<transform translation = "59 6.01 18">
+					<transform scale="9.5 1 4.5">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "65 8 18">
+					<transform scale="1 4 1" rotation="1 0 0 1.57">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+
+							<cylinder></cylinder>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+
+
+				<!-- noptiera  -->
+				<transform translation = "67.5 3 8.4">
+					<transform scale="1.5 3 3">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+				<!-- birou -->
+				<transform translation = "33 3.5 10">
+					<transform scale="2.1 3 3">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+				<!-- sertare -->
+				<transform class="mutasertar" translation = "37 5.5 10">
+					<transform scale="0.12 0.9 2.9">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+				<transform class="mutasertar" translation = "35.5 4.9 10">
+					<transform scale="1.5 0.12 2.57">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform class="mutasertar" translation = "35 5.5 12.5">
+					<transform scale="1.9 0.81 0.12">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform class="mutasertar" translation = "35 5.5 7.5">
+					<transform scale="1.9 0.81 0.12">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "35 3.5 10">
+					<transform scale="0.12 1 2.9">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "35 1.5 10">
+					<transform scale="0.12 0.9 2.9">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+				<transform translation = "33 6.4 18.5">
+					<transform scale="2.1 0.1 5.5">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "33 3.4 23.5">
+					<transform scale="2.1 3 0.1">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+				<!-- dulap camera mica -->
+				<group DEF = "dulap">
+				<transform translation = "33 8.5 0">
+					<transform scale="2.1 8 6.5">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 0"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "35 8.5 4.19">
+					<transform scale="0.12 7.8 2.1">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0.87 0.72 0.52"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "35 8.5 -0.03">
+					<transform scale="0.12 7.8 2.1">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0.87 0.72 0.52"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "35 8.5 -4.27">
+					<transform scale="0.12 7.8 2.1">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0.87 0.72 0.52"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+			</group>
+
+				<!-- monitor -->
+				<transform translation = "32.3 9 20">
+					<transform scale="0.12 1.7 3">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "32.3 8 20">
+					<transform scale="0.12 1.5 0.12">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "32.3 6.5 20">
+					<transform scale="0.7 0.12 0.9">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+				<!-- televizor -->
+				<group DEF="tv">
+					<transform translation = "32.3 9 11">
+						<transform scale="0.12 2.1 4">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0 0 0"/>
+								</appearance>
+
+								<box></box>
+
+							</shape>
+						</transform>
+					</transform>
+					<transform translation = "32.3 8 11">
+						<transform scale="0.12 1.5 0.12">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0 0 0"/>
+								</appearance>
+
+								<box></box>
+
+							</shape>
+						</transform>
+					</transform>
+					<transform translation = "32.3 6.5 11">
+						<transform scale="0.8 0.12 1.1">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0 0 0"/>
+								</appearance>
+
+								<box></box>
+
+							</shape>
+						</transform>
+					</transform>
+				</group>	
+				
+					<transform translation = "33 2.5 15">
+						<transform scale="1.4 2 1">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0 1 0"/>
+								</appearance>
+
+								<box></box>
+
+							</shape>
+						</transform>
+					</transform>
+				
+
+				<!-- camera mare -->
+
+
+				<!-- mocheta -->
+
+					<transform translation = "-3 0 4">
+						<transform scale="7 0.12 12">
+							<shape>
+								<appearance>
+									<imagetexture url="mochetaOval.png"></imagetexture>
+								</appearance>
+
+								<Cylinder></Cylinder>
+
+							</shape>
+						</transform>
+					</transform>
+				<!-- pat -->
+
+				<transform translation = "18 3 7">
+					<transform scale="11 3 9">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 0.87"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "29.3 5 7">
+					<transform scale="0.3 5 15">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 0.87"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "26.5 3 19">
+					<transform scale="3 3 3">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 0.87"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "26.5 3 -5">
+					<transform scale="3 3 3">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 0.87"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+
+				<!-- saltea -->
+				<transform translation = "18.2 5 7">
+					<transform scale="11 2 8.8">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "17 1.7 16.1">
+					<transform scale="5 1.7 0.12">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 0.87"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "17 1.7 -2.1">
+					<transform scale="5 1.7 0.12">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 0.87"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<!-- fotoliu -->
+
+				<transform translation = "3 3 -22">
+					<transform scale="4 2.5 3">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 0.87"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation="-0.5 6 -21.9">	
+					<transform scale="1 1 3.1">
+						<transform rotation = "1 0 0 1.57">
+						<shape>
+							<appearance>
+								<material diffusecolor="1 1 0.87"/>
+							</appearance>
+							<Cylinder> 
+							</Cylinder>
+						</shape>
+						</transform>
+					</transform>
+				</transform>
+
+				<transform translation="6.5 6 -21.9">	
+					<transform scale="1 1 3.1">
+						<transform rotation = "1 0 0 1.57">
+						<shape>
+							<appearance>
+								<material diffusecolor="1 1 0.87"/>
+							</appearance>
+							<Cylinder> 
+							</Cylinder>
+						</shape>
+						</transform>
+					</transform>
+				</transform>
+
+				<transform translation = "3 7 -24.88">
+					<transform scale="4 3 0.12">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 0.87"/>
+							</appearance>
+
+							<box></box>
+
+						</shape>
+					</transform>
+				</transform>
+
+				<!-- dulap camera mare -->
+
+				<transform translation = "20 8 -21">
+					<transform scale="5 8 3">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 0"/>
+							</appearance>
+
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "17.6 8 -18">
+					<transform scale="2.39 7.8 0.12">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0.87 0.72 0.52"/>
+							</appearance>
+
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "22.4 8 -18">
+					<transform scale="2.39 7.8 0.12">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0.87 0.72 0.52"/>
+							</appearance>
+
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<!-- masa  -->
+
+
+				<group def="masacompleta">
+					<transform translation = "-10 5 -21">
+						<transform scale="5 0.23 3">
+							<shape def="masa">
+								<appearance>
+									<material diffuseColor = "0.91 0.72 0.52"/>
+								</appearance>
+
+								<box></box>
+							</shape>
+						</transform>
+					</transform>
+				
+
+					<transform translation="-14 2.7 -23" scale="0.23 2.1 0.23">
+						<shape def="picioare">
+							<appearance>
+								<material diffuseColor = "0.91 0.72 0.52"/>
+							</appearance>
+
+							<cylinder></cylinder>
+						</shape>
+					</transform>
+
+					<transform translation="-6.1 2.7 -23" scale="0.23 2.1 0.23">
+						<shape use="picioare">
+						</shape>
+					</transform>
+
+					<transform translation="-14 2.7 -19" scale="0.23 2.1 0.23">
+						<shape use="picioare">
+						</shape>
+					</transform>
+
+					<transform translation="-6.1 2.7 -19" scale="0.23 2.1 0.23">
+						<shape use="picioare">
+						</shape>
+					</transform>
+
+				</group>
+				<transform rotation="0 1 0 1.57" translation="-15 0 0" scale="1.27 1.27 1.27" >
+					<shape use="masacompleta"></shape>
+				</transform>
+
+				<!-- scaune -->
+
+
+				<!-- dulap cu tv camera mare -->
+				<transform translation = "-16.5 3.5 7">
+					<transform scale="3 3.5 5.9">
+						<shape def="masa">
+							<appearance>
+								<material diffuseColor = "0.91 0.72 0.52"/>
+							</appearance>
+
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation="-13.5 6.88 7" scale="1 0.12 5.9">
+					<shape>
+						<appearance>
+							<material diffuseColor = "0.91 0.72 0.52"/>
+						</appearance>
+
+						<cylinder></cylinder>
+					</shape>
+				</transform>
+
+				<transform translation = "-19.38 12.5 7">
+					<transform scale="0.12 5.5 5.9">
+						<shape def="masa">
+							<appearance>
+								<material diffuseColor = "0.91 0.72 0.52"/>
+							</appearance>
+
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+				
+				<transform translation="-65 -2.5 -8.5">
+					<transform  scale="1.5 1.5 1.4">
+						<shape use="tv"></shape>
+					</transform>
+				</transform>
+
+				<group def="dulapioare">
+					<transform translation = "-16.5 3.5 18.3">
+						<transform scale="3 3.5 5.5">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0.91 0.72 0.52"/>
+								</appearance>
+
+								<box></box>
+							</shape>
+						</transform>
+					</transform>
+					<transform translation = "-19.38 12.5 18.3">
+						<transform scale="0.12 5.5 5.5">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0.91 0.72 0.52"/>
+								</appearance>
+
+								<box></box>
+							</shape>
+						</transform>
+					</transform>
+					<transform translation = "-16.5 14.5 18.3">
+						<transform scale="3 3.5 5.5">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0.91 0.72 0.52"/>
+								</appearance>
+
+								<box></box>
+							</shape>
+						</transform>
+					</transform>
+					<transform translation = "-13.5 14.5 21">
+						<transform scale="0.12 3.31 2.6">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0 1 0"/>
+								</appearance>
+
+								<box></box>
+							</shape>
+						</transform>
+					</transform>
+					<transform translation = "-13.5 14.5 15.6">
+						<transform scale="0.12 3.31 2.66">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0 1 0"/>
+								</appearance>
+
+								<box></box>
+							</shape>
+						</transform>
+					</transform>
+
+					<transform translation = "-13.5 3.5 21">
+						<transform scale="0.12 3.31 2.6">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0 1 0"/>
+								</appearance>
+
+								<box></box>
+							</shape>
+						</transform>
+					</transform>
+					<transform translation = "-13.5 3.5 15.6">
+						<transform scale="0.12 3.31 2.66">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0 1 0"/>
+								</appearance>
+
+								<box></box>
+							</shape>
+						</transform>
+					</transform>
+				</group>
+				<transform translation="0 0 -22.7">
+					<shape use="dulapioare">
+				</transform>
+
+
+
+				<!-- bucatarie -->
+				<transform translation = "-45.5 9 -3">
+					<transform scale="4 9 4">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation="-41.5 4 -3" scale="1 4 4">
+					<shape>
+						<appearance>
+							<material diffuseColor = "0 1 1"/>
+						</appearance>
+
+						<cylinder></cylinder>
+					</shape>
+				</transform>
+
+				<transform translation="-41.5 13.5 -3" scale="1 4.5 4">
+					<shape>
+						<appearance>
+							<material diffuseColor = "0 1 1"/>
+						</appearance>
+
+						<cylinder></cylinder>
+					</shape>
+				</transform>
+
+				<!-- scaun -->
+				<group def="scaunasol">
+				<transform translation = "-37 4 16">
+					<transform scale="2 0.12 2.5">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<!-- picior scaun -->
+				<transform translation = "-35.5 2.5 14">
+					<transform scale="0.12 1.5 0.12">
+						<shape def="piciorscaun">
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "-35.5 2.5 18">
+					<transform scale="0.12 1.5 0.12">
+						<shape use="piciorscaun">
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "-38.5 2.5 14">
+					<transform scale="0.12 1.5 0.12">
+						<shape use="piciorscaun">
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "-38.5 2.5 18">
+					<transform scale="0.12 1.5 0.12">
+						<shape use="piciorscaun">
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "-35.5 6.1 16">
+					<transform scale="0.12 2.3 2">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+				</group>
+
+				<transform translation="0 0 -7">
+					<shape use="scaunasol">
+						
+					</shape>
+				</transform>
+
+				<group def="scaun2">
+				<transform translation = "-47 4 16">
+					<transform scale="2 0.12 2.5">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<!-- picior scaun -->
+				<transform translation = "-45.5 2.5 14">
+					<transform scale="0.12 1.5 0.12">
+						<shape def="piciorscaun">
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "-45.5 2.5 18">
+					<transform scale="0.12 1.5 0.12">
+						<shape use="piciorscaun">
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "-48.5 2.5 14">
+					<transform scale="0.12 1.5 0.12">
+						<shape use="piciorscaun">
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "-48.5 2.5 18">
+					<transform scale="0.12 1.5 0.12">
+						<shape use="piciorscaun">
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "-48.5 6.1 16">
+					<transform scale="0.12 2.3 2">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+				</group>
+
+				<transform translation="0 0 -7">
+					<shape use="scaun2"></shape>
+				</transform>
+
+
+				<!-- chiuveta -->
+				<transform translation = "-23.3 3 7">
+					<transform scale="3 3 9">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0.12 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "-23.3 6.01 2.5">
+					<transform scale="4.1 0.1 3" rotation="0 1 0 -1.57">
+						<shape>
+							<appearance>
+								<imageTexture url="sink2.png"></imageTexture>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<!-- masina de spalat -->
+				<transform translation = "-23.3 3 -4.5">
+					<transform scale="3 3 2">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "-25.5 3 -4.5" rotation="0 0 1 1.57">
+					<transform scale="1.7 1 1.7">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0.87 0.87 0.87"/>
+							</appearance>
+							<cylinder></cylinder>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "-23.3 3 20.5">
+					<transform scale="3 3 3">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<group def="ochiaragaz">
+					<transform translation = "-25 5.5 19">
+						<transform scale="0.7 0.7 0.7">
+							<shape>
+								<appearance>
+									<material diffuseColor = "0 0 0"/>
+								</appearance>
+								<cylinder></cylinder>
+							</shape>
+						</transform>
+					</transform>
+				</group>
+				<transform translation="3 0 0">
+					<shape use="ochiaragaz">
+					</shape>
+				</transform>
+
+				<transform translation="3 0 3">
+					<shape use="ochiaragaz">
+					</shape>
+				</transform>
+
+				<transform translation="0 0 3">
+					<shape use="ochiaragaz">
+					</shape>
+				</transform>
+
+
+
+				<!-- baie -->
+				<transform translation = "66.9 3 -16">
+					<transform scale="3 3 9">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+				<transform translation = "66.9 6.03 -16">
+					<transform scale="2.7 0.01 8.7">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0 0 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "66.5 12 -24.5">
+					<transform scale="0.16 7 0.16">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0.86 0.86 0.86"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "66.5 18.5 -24">
+					<transform scale="0.5 0.5 0.5" rotation="1 0 0 -1">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0.86 0.86 0.86"/>
+							</appearance>
+							<cone></cone>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "60 4 -22.9">
+					<transform scale="2.5 4 2.1">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "60 8.1 -22.9">
+					<transform scale="2.3 0.01 1.9">
+						<shape>
+							<appearance>
+								<imagetexture url="sink.jpg"></imagetexture>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "60 15 -24.9">
+					<transform scale="3 0.1 4" rotation="1 0 0 1.58">
+						<shape>
+							<appearance>
+								<material diffuseColor = "0.86 0.86 0.86"/>
+							</appearance>
+							<cylinder></cylinder>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "52 2.5 -22">
+					<transform scale="2.3 2.5 3">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+				<transform translation = "52 7 -23.9">
+					<transform scale="2.1 2.5 1">
+						<shape>
+							<appearance>
+								<material diffuseColor = "1 1 1"/>
+							</appearance>
+							<box></box>
+						</shape>
+					</transform>
+				</transform>
+
+
+			</scene>
+
+		</x3d>
+
+	</body>
+	<script>
+		var toggle = 0;
+		function myFunc(){
+			var elemenop = document.getElementsByClassName("mutasertar");
+			if(toggle==0){
+				elemenop[0].setAttribute("translation","35 5.5 10");
+				elemenop[1].setAttribute("translation","32.7 4.9 10");
+				elemenop[2].setAttribute("translation","33 5.5 12.5");
+				elemenop[3].setAttribute("translation","33 5.5 7.5");
+				toggle = 1;
+			}else{
+				elemenop[0].setAttribute("translation","37 5.5 10");
+				elemenop[1].setAttribute("translation","35.5 4.9 10");
+				elemenop[2].setAttribute("translation","35 5.5 12.5");
+				elemenop[3].setAttribute("translation","35 5.5 7.5");
+				toggle = 0;
+			}
+			
+		}	
+			
+	</script>
+</html>
