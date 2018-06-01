@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<Scene>
+        <transform DEF="PICIOR SCAUN 1" translation="10 0 40">
+            <shape>
+                <appearance>
+                    <material diffusecolor = "0 0 0 " transparency = "0"/>
+                </appearance>
+                <box size="0.3 2 0.3"></box>
+            </shape>
+        </transform>
+
+        <transform DEF="PICIOR SCAUN 2" translation="11 0 40">
+            <shape>
+                <appearance>
+                    <material diffusecolor = "0 0 0 " transparency = "0"/>
+                </appearance>
+                <box size="0.3 2 0.3"></box>
+            </shape>
+        </transform>
+
+        <transform DEF="PICIOR SCAUN 3" translation="10 0 41">
+            <shape>
+                <appearance>
+                    <material diffusecolor = "0 0 0 " transparency = "0"/>
+                </appearance>
+                <box size="0.3 2 0.3"></box>
+            </shape>
+        </transform>
+
+        <transform DEF="PICIOR SCAUN 4" translation="11 0 41">
+            <shape>
+                <appearance>
+                    <material diffusecolor = "0 0 0 " transparency = "0"/>
+                </appearance>
+                <box size="0.3 2 0.3"></box>
+            </shape>
+        </transform>
+        <transform DEF="BARA SUPORT MASA" translation="10.5 1 40.5">
+            <shape>
+                <appearance>
+                    <ImageTexture url="texturi/scaun.jpg"></ImageTexture>
+                    <TextureTransform scale="1, 1"></TextureTransform>
+                </appearance>
+                <Cylinder height='0.5' radius='1.5' ></Cylinder>
+            </shape>
+        </transform>
+
+	</Scene>
+</X3D>

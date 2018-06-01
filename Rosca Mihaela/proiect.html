@@ -1,0 +1,1232 @@
+<html>
+<head>
+	<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'></script> 
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+</head>
+
+<body>
+<x3d width ="1024" height ="720" >
+	<scene>
+		<NavigationInfo type="EXAMINE"></NavigationInfo> 
+		<Viewpoint fieldOfView="1.9" position="0 1 100" orientation="0 0 1 0" id="id_viewpoint"></Viewpoint>
+		
+		<transform translation="0 0 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/iarba.jpg"></ImageTexture>
+					<TextureTransform scale="100, 100"></TextureTransform>
+				</appearance>
+				<box size="500 0.1 500"></box>
+			</shape>
+		</transform>
+
+		
+		<!-- DEFINIRE NOPTIERE -->
+
+		<transform DEF="NOPTIERA" translation="-57.5 2.5 8">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/lemn.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="3 5 3"></box>
+			</shape>
+		</transform>
+
+		<!-- SFARSIT DEFINIRE NOPTIERE -->
+		
+		<!-- PERETI EXTERIORI -->
+		<transform DEF="PERETE SPATE 1" translation="-55.25 10 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="11.5 20 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE SPATE 1 JOS" translation="-45 3.75 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="9 7.5 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE SPATE 1 SUS" translation="-45 18.25 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="9 3.5 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE SPATE 2" translation="-25 10 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="31 20 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE SPATE 2 JOS" translation="-5 3.75 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="9 7.5 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE SPATE 2 SUS" translation="-5 18.25 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="9 3.5 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE SPATE 3" translation="15 10 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="31 20 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE SPATE 3 JOS" translation="35 3.75 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="9 7.5 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE SPATE 3 SUS" translation="35 18.25 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="9 3.5 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE SPATE 4" translation="50.25 10 0">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="21.5 20 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE STANGA" translation="-60 10 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="2 20 60"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE DREAPTA" translation="60 10 30">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="2 20 60"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE FATA 2" translation="-7.75 10 60">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="55.5 20 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE FATA 1" translation="-52.75 10 60">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="16.5 20 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE FATA 1 JOS" translation="-40 3.75 60">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="2, 1"></TextureTransform>
+				</appearance>
+				<box size="9 7.5 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE FATA 1 SUS" translation="-40 18.25 60">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="2, 1"></TextureTransform>
+				</appearance>
+				<box size="9 3.5 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE USA INTRARE SUS" translation="25 17.5 60">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+				</appearance>
+				<box size="10 5 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE FATA DREAPTA" translation="45 10 60">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="30 20 2"></box>
+			</shape>
+		</transform>
+		
+		<!-- SFARSIT PERETI EXTERIORI -->
+
+		<!-- PODEA -->
+		
+		<transform translation="0 0.5 30">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/podea.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="120 1 60"></box>
+			</shape>
+		</transform>
+
+		<!-- SFARSIT PODEA -->
+
+		<!-- ACOPERIS -->
+		
+		<transform translation="0 20 30">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/acoperis.jpg"></ImageTexture>
+					<TextureTransform scale="10, 10"></TextureTransform>
+				</appearance>
+				<box size="128 1 65"></box>
+			</shape>
+		</transform>
+
+		<!-- SFARSIT ACOPERIS -->
+
+		<!-- USA INTRARE -->
+		
+		<transform DEF="USA INTRARE" translation="25 7.5 60">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/usa-intrare.jpg"></ImageTexture>
+				</appearance>
+				<box size="10 15 2"></box>
+			</shape>
+		</transform>
+
+		<!-- SFARSIT USA INTRARE -->
+
+		<!-- DORMITOR STANGA -->
+		
+		<transform DEF="PERETE DORMITOR DREAPTA" translation="-20 10 16 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="2 20 30"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE DORMITOR FATA SATANGA" translation="-52 10 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="15 20 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE DORMITOR FATA DREAPTA" translation="-27 10 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="15 20 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE DORMITOR USA SUS" translation="-39.5 17.5 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="2, 1"></TextureTransform>
+				</appearance>
+				<box size="10 5 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="USA INTERIOR" translation="-39.5 7.5 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/usa-interior.png"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="10 15 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="COVOR DORMITOR 1" translation="-44 1 15">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/covor1.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="30 0.25 20"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PAT DORMITOR 1" translation="-51.5 2.25 15">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/pat.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="15 4 10"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="SPATAR PAT DORMITOR 1" translation="-59.25 5 15">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/pat.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="1 8 10"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERINA 1 PAT DORMITOR 1" translation="-59 5 17.9">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perina.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="3 0.5 3"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERINA 2 PAT DORMITOR 1" translation="-59 5 13">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perina.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="3 0.5 3"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PLAPUMA PAT DORMITOR 1" translation="-50 5 15">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perina.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="13 0.3 10"></box>
+			</shape>
+		</transform>
+
+		<transform translation="0 0 14">
+			<transform USE="NOPTIERA"></transform>
+		</transform>
+
+		<!-- SFARSIT DORMITOR STANGA -->
+
+		<!-- BUCATARIE -->
+		
+		<transform DEF="PERETE BUCATARIE" translation="-40 10 40 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="42 20 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE CULUAR SUS" translation="-20 17.5 36 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="2, 1"></TextureTransform>
+				</appearance>
+				<box size="2 5 10"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE BUCATARIE 1" translation="-20 10 43.5 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="2, 2"></TextureTransform>
+				</appearance>
+				<box size="2 20 5"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE BUCATARIE 2" translation="-20 10 56.5 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="2, 2"></TextureTransform>
+				</appearance>
+				<box size="2 20 5"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="USA BUCATARIE" translation="-20 7.5 50 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/usa-interior.png"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="2 15 8"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PERETE BUCATARIE SUS" translation="-20 17.5 50 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="2, 1"></TextureTransform>
+				</appearance>
+				<box size="2 5 8"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="FEIGIDER BUCATARIE " translation="-57.5 8 42.5 ">
+			<shape>
+				<appearance>
+					<Material diffuseColor='0 0 0' transparency='0'/>
+				</appearance>
+				<box size="6 15 4"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA FEIGIDER 1 " translation="-57.5 5 44.5">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/frigider.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="6 10 0.2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA FEIGIDER 2 " translation="-57.5 13 44.5">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/frigider.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="6 4.75 0.2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="DULAPIOR BUCATARIE JOS" translation="-38 4 42.5 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie1.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="34 8 4"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA BUCATARIE JOS 1 " translation="-51.9 4 45">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="5 8 0.1"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA BUCATARIE JOS 2 " translation="-46.80 4 45">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="5 8 0.1"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="SERTAR BUCATARIE JOS 1 " translation="-41.75 2.3 45">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="5 2.1 0.1"></box>
+			</shape>
+		</transform>
+		<transform DEF="SERTAR BUCATARIE JOS 2 " translation="-41.75 4.6 45">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="5 2 0.1"></box>
+			</shape>
+		</transform>
+		<transform DEF="SERTAR BUCATARIE JOS 3 " translation="-41.70 6.8 45">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="5 2 0.1"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA BUCATARIE JOS 3 " translation="-36 4 45">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="6 8 0.1"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA BUCATARIE JOS 4 " translation="-29.9 4 45">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="6 8 0.1"></box>
+			</shape>
+			</transform>
+
+			<transform DEF="USA BUCATARIE JOS 6 " translation="-24 4 45">
+				<shape>
+					<appearance>
+						<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+						<TextureTransform scale="1, 1"></TextureTransform>
+					</appearance>
+					<box size="5.6 8 0.1"></box>
+				</shape>
+			</transform>
+
+		<transform DEF="DULAPIOR BUCATARIE SUS " translation="-37.5 16 42.5 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie1.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="34 3.5 4"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA BUCATARIE SUS1 " translation="-50.5 16 45 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="8 3.5 0.1"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="USA BUCATARIE SUS 1 " translation="-50.5 16 45 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="8 3.5 0.1"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA BUCATARIE SUS 2 " translation="-42.3 16 45 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="8 3.5 0.1"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA BUCATARIE SUS 3 " translation="-34.2 16 45 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="8 3.5 0.1"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA BUCATARIE SUS 4 " translation="-25.5 16 45 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/bucatarie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="9 3.5 0.1"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="MASA BUCATARIE 1" translation="-40 6 55 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/masa1.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="10 1 8"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PICIOR MASA BUCATARIE " translation="-40 3.3 55 ">
+			<shape>
+				<appearance>
+					<Material diffuseColor='0 0 0' transparency='0'/>
+				</appearance>
+				<box size="1 4 1"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="SUPORT MASA BUCATARIE " translation="-40 0.8 55 ">
+			<shape>
+				<appearance>
+					<Material diffuseColor='0 0 0' transparency='0'/>
+				</appearance>
+				<box size="5 0.5 5"></box>
+			</shape>
+		</transform>
+
+		<Transform translation="-44 2 14">
+			<inline url="scaun.x3d"></inline> 
+		</Transform>
+
+		<Transform translation="-57 2 14">
+			<inline url="scaun.x3d"></inline> 
+		</Transform>
+
+		<!-- SFARSIT BUCATARIE -->
+		
+		<!-- BAIE -->
+		
+		<transform DEF="PERETE BAIE FATA SATANGA" translation="-11.5 10 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="15 20 2"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="USA BAIE" translation="0 7.5 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/usa-interior.png"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>	
+				</appearance>
+				<box size="8 15 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE BAIE DREAPTA" translation="10 10 16">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="2 20 30"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE BAIE FATA DREAPTA" translation="6.5 10 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="5 20 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE BAIE FATA SUS" translation="0 17.5 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="8 5 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="GRESIE BAIE" translation="-4 1 14">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/gresie.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="30 0.025 30"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="CADA" translation="-14 2 5">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<box size="10 2 8"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="STICLA CADA 1" translation="-9.4 8 5">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 0' transparency='0.3'/>
+				</appearance>
+				<box size="0.3 10 8"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="STICLA CADA 2" translation="-14.25 8 9">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 0' transparency='0.3'/>
+				</appearance>
+				<box size="9.5 10 0.3 "></box>
+			</shape>
+		</transform>
+
+		<transform DEF="BARA DUSH" translation="-14 8 1 ">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<box size="0.2 12 0.4 "></box>
+			</shape>
+		</transform>
+
+		<transform DEF="STROPITOARE DUSH" translation="-14 14 2 ">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<Cylinder height='0.4' radius='1' ></Cylinder>
+			</shape>
+		</transform>
+
+		<transform DEF="SAPUNIERA DUSH" translation="-12 10 2 ">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<Cylinder height='0.2' radius='1' ></Cylinder>
+			</shape>
+		</transform>
+
+		<transform DEF="POLITA DUSH 1" translation="-18 10 2 ">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<Cylinder height='0.2' radius='1' ></Cylinder>
+			</shape>
+	   </transform>
+
+		<transform DEF="POLITA DUSH 2" translation="-18 12 2 ">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<Cylinder height='0.2' radius='1' ></Cylinder>
+			</shape>
+		</transform>
+
+		<transform DEF="POLITA DUSH 3" translation="-18 8 2 ">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<Cylinder height='0.2' radius='1' ></Cylinder>
+			</shape>
+		</transform>
+
+
+		<transform DEF="STICLA CADA 2" translation="-14.25 8 9">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 0' transparency='0.3'/>
+				</appearance>
+				<box size="9.5 10 0.3 "></box>
+			</shape>
+		</transform>
+
+		<transform DEF="CHIUVETA" translation=" 4 8 4">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<Cylinder height='1' radius='4' ></Cylinder>
+			</shape>
+		</transform>
+
+		<transform DEF="DULAPIOR CHIUVETA" translation="4 4.25 4">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/CuloareCada.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="8 6.5 8"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="VECEU" translation="-17 3 16">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<Cylinder height='1' radius='3' ></Cylinder>
+			</shape>
+		</transform>
+
+		<transform DEF="COMPONENTA VEDEU" translation="-17 1.99 16">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<Cylinder height='2' radius='2' ></Cylinder>
+			</shape>
+		</transform>
+
+		<transform DEF="MASINA DE SPALAT" translation="-16 4 24">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 1' transparency='0'/>
+				</appearance>
+				<box size="6 6 6"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="COMPONENTA MASINA DE SPALAT" translation="-13 4 24" rotation = "0,0,1,1.57">
+			<shape>
+				<appearance>
+					<Material diffuseColor='1 1 0' transparency='0'/>
+				</appearance>
+				<Cylinder height='0.5' radius='2' ></Cylinder>
+			</shape>
+		</transform>
+
+		<!-- DORMITOR 2 -->
+
+		<transform DEF="PERETE DORMITOR 2 FATA SATANGA" translation="21 10 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="20 20 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="USA DORMITOR 2 " translation="35 7.5 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/usa-interior.png"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="8 15 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE DORMITOR 2 FATA SUS" translation="35 17.5 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="2, 1"></TextureTransform>
+				</appearance>
+				<box size="8 5 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PERETE DORMITOR 2 FATA SATANGA" translation="49 10 30 ">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/perete.jpg"></ImageTexture>
+					<TextureTransform scale="6, 3"></TextureTransform>
+				</appearance>
+				<box size="20 20 2"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="COVOR DORMITOR 2" translation="44 1 15">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/covor2.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="30 0.25 20"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="PAT DORMITOR 2" translation="51.5 2.25 15">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/pat.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="15 4 10"></box>
+			</shape>
+		</transform>
+
+		<transform translation="115 0 14">
+			<transform USE="NOPTIERA"></transform>
+		</transform>
+
+		<transform translation="115 0 0">
+			<transform USE="NOPTIERA"></transform>
+		</transform>
+
+
+		<!-- SFARSIT DORMITOR 2 -->
+
+		<!-- DEFINIRE LIVING -->
+
+		<transform translation="59 -5 38">
+			<transform DEF="TELEVIZOR ECRAN" translation="0 12.5 8">
+				<shape>
+					<appearance>
+						<material diffusecolor = "0 0 0" transparency = "0"/>
+					</appearance>
+					<box size="0.25 4.5 7"></box>
+				</shape>
+			</transform>
+
+			<transform DEF="TELEVIZOR DUNGA SUS" translation="0 14.75 8">
+				<shape>
+					<appearance>
+						<material diffusecolor = "1 1 1" transparency = "0"/>
+					</appearance>
+					<box size="0.3 0.25 7.5"></box>
+				</shape>
+			</transform>
+
+			<transform DEF="TELEVIZOR DUNGA JOS" translation="0 10.25 8">
+				<shape>
+					<appearance>
+						<material diffusecolor = "1 1 1" transparency = "0"/>
+					</appearance>
+					<box size="0.3 0.25 7.5"></box>
+				</shape>
+			</transform>
+
+			<transform DEF="TELEVIZOR DUNGA STANGA" translation="0 12.5 4.35">
+				<shape>
+					<appearance>
+						<material diffusecolor = "1 1 1" transparency = "0"/>
+					</appearance>
+					<box size="0.25 4.75 0.3"></box>
+				</shape>
+			</transform>
+
+			<transform DEF="TELEVIZOR DUNGA DREAPTA" translation="0 12.5 11.65">
+				<shape>
+					<appearance>
+						<material diffusecolor = "1 1 1" transparency = "0"/>
+					</appearance>
+					<box size="0.25 4.75 0.3"></box>
+				</shape>
+			</transform>
+		</transform>
+
+		<transform DEF="CANAPEA" translation="40 3 48">
+			<transform DEF="SEZUT">
+				<shape>
+					<appearance>
+						<ImageTexture url="texturi/canapea.jpg"></ImageTexture>
+						<TextureTransform scale="1, 1"></TextureTransform>
+					</appearance>
+					<box size="3 2 10"></box>
+				</shape>
+			</transform>
+			<transform DEF="SPATAR" translation="-2 1 0">
+				<shape>
+					<appearance>
+						<ImageTexture url="texturi/canapea.jpg"></ImageTexture>
+						<TextureTransform scale="1, 1"></TextureTransform>
+					</appearance>
+					<box size="2 4 10"></box>
+				</shape>
+			</transform>
+
+			<transform DEF="COTIERA 1 STANGA" translation="-2 0 5.5">
+				<shape>
+					<appearance>
+						<material diffusecolor = "1 1 1" transparency = "0"/>
+					</appearance>
+					<box size="2 6 1"></box>
+				</shape>
+			</transform>
+
+			<transform DEF="COTIERE 2 STANGA" translation="0 0 5.5">
+				<shape>
+					<appearance>
+						<material diffusecolor = "1 1 1" transparency = "0"/>
+					</appearance>
+					<box size="3 4 1"></box>
+				</shape>
+			</transform>
+
+			<transform DEF="COTIERA 1 DREAPTA" translation="-2 0 -5.5">
+				<shape>
+					<appearance>
+						<material diffusecolor = "1 1 1" transparency = "0"/>
+					</appearance>
+					<box size="2 6 1"></box>
+				</shape>
+			</transform>
+
+			<transform DEF="COTIERE 2 DREAPTA" translation="0 0 -5.5">
+				<shape>
+					<appearance>
+						<material diffusecolor = "1 1 1" transparency = "0"/>
+					</appearance>
+					<box size="3 4 1"></box>
+				</shape>
+			</transform>
+		</transform>
+
+		<transform DEF="COVOR LIVING 1 " translation="49.7 3 48">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/covorLiving.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<Cylinder height='1' radius='7' ></Cylinder>
+			</shape>
+		</transform>
+
+		<transform DEF="COVOR LIVING 2" translation="10 1 46">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/covorLiving.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>
+				</appearance>
+				<box size="40 0.25 20"></box>
+			</shape>
+		</transform>
+
+		<transform DEF="MASA" translation="10 6 46">
+				<shape>
+					<appearance>
+						<ImageTexture url="texturi/masa.jpg"></ImageTexture>
+						<TextureTransform scale="1, 1"></TextureTransform>
+					</appearance>
+					<Cylinder height='1' radius='8' ></Cylinder>
+				</shape>
+			</transform>
+			<transform DEF="SUPORT MASA" translation="10 1.6 46">
+					<shape>
+						<appearance>
+							<ImageTexture url="texturi/suportMasa.jpg"></ImageTexture>
+							<TextureTransform scale="1, 1"></TextureTransform>
+						</appearance>
+						<Cylinder height='0.5' radius='4' ></Cylinder>
+					</shape>
+				</transform>
+
+				<transform DEF="BARA SUPORT MASA" translation="10 4 46">
+						<shape>
+							<appearance>
+								<ImageTexture url="texturi/suportMasa.jpg"></ImageTexture>
+								<TextureTransform scale="1, 1"></TextureTransform>
+							</appearance>
+							<Cylinder height='4' radius='0.3' ></Cylinder>
+						</shape>
+					</transform>
+
+				<Transform translation="0 2 14">
+					<inline url="scaun.x3d"></inline> 
+				</Transform>
+
+				<Transform translation="0 2 -4">
+					<inline url="scaun.x3d"></inline> 
+				</Transform>
+
+				<Transform translation="8 2 -2">
+					<inline url="scaun.x3d"></inline> 
+				</Transform>
+
+				<Transform translation="10 2 4">
+					<inline url="scaun.x3d"></inline> 
+				</Transform>
+
+				<Transform translation="8 2 12">
+					<inline url="scaun.x3d"></inline> 
+				</Transform>
+
+				<Transform translation="-8 2 12">
+					<inline url="scaun.x3d"></inline> 
+				</Transform>
+
+				<Transform translation="-10 2 4">
+					<inline url="scaun.x3d"></inline> 
+				</Transform>
+
+				<Transform translation="-8 2 -2">
+					<inline url="scaun.x3d"></inline> 
+				</Transform>
+
+
+		<!-- SFARSIT DEFINIRE LIVING -->
+
+		<!-- DEFINIRE OBIECT GEAM + GEAM BAIE -->
+
+		<Group DEF='GEAM' render="TRUE">
+			<transform translation="-5 10 0">
+				<transform DEF="RAMA JOS" translation="0 -2.25 0">
+					<shape>
+						<appearance>
+							<material diffusecolor = "0 0 0" transparency = "0"/>
+						</appearance>
+						<box size="9 0.5 2"></box>
+					</shape>
+				</transform>
+				<transform DEF="RAMA DREAPTA" translation="4.25 2 0">
+					<shape>
+						<appearance>
+							<material diffusecolor = "0 0 0" transparency = "0"/>
+						</appearance>
+						<box size="0.5 9 2"></box>
+					</shape>
+				</transform>
+				<transform DEF="RAMA SUS" translation="0 6.25 0">
+					<shape>
+						<appearance>
+							<material diffusecolor = "0 0 0" transparency = "0"/>
+						</appearance>
+						<box size="9 0.5 2"></box>
+					</shape>
+				</transform>
+				<transform DEF="RAMA MIJLOC" translation="0 2 0">
+					<shape>
+						<appearance>
+							<material diffusecolor = "0 0 0" transparency = "0"/>
+						</appearance>
+						<box size="0.5 9 2"></box>
+					</shape>
+				</transform>
+				<transform DEF="RAMA STANGA" translation="-4.25 2 0">
+					<shape>
+						<appearance>
+							<material diffusecolor = "0 0 0 " transparency = "0"/>
+						</appearance>
+						<box size="0.5 9 2"></box>
+					</shape>
+				</transform>
+
+				<transform DEF="GEAM STANGA" translation="-2 2 0">
+					<shape>
+						<appearance>
+							<material diffusecolor = "1 1 0 " transparency = "0.7"/>
+						</appearance>
+						<box size="4.5 8.5 0.5"></box>
+					</shape>
+				</transform>
+
+				<transform DEF="GEAM STANGA" translation="2 2 0">
+					<shape>
+						<appearance>
+							<material diffusecolor = "1 1 0 " transparency = "0.7"/>
+						</appearance>
+						<box size="4.5 8.5 0.5"></box>
+					</shape>
+				</transform>
+			</transform>
+		</Group>
+
+		<!-- SFARSIT DEFINIRE OBIECT GEAM + GEAM BAIE -->
+
+		<!-- DEFINIRE ALTE GEAMURI -->
+		
+		<Transform DEF="GEAM DORMITOR 1" translation='-40 0 0'>
+          <Group USE='GEAM'/>
+        </Transform>
+
+		<Transform DEF="GEAM DORMITOR 2" translation='40 0 0'>
+          <Group USE='GEAM'/>
+        </Transform>
+
+		<Transform DEF="GEAM BUCATARIE" translation='-35 0 60 '>
+          <Group USE='GEAM'/>
+        </Transform>
+
+		<!-- SFARSIT DEFINIRE ALTE GEAMURI -->
+
+		<transform DEF="TABLOU " translation="-53 13.5 1">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/tablou1.jpg"></ImageTexture>
+					<TextureTransform scale="1, 1"></TextureTransform>					
+				</appearance>
+				<box size="4 4 0.25"></box>
+			</shape>
+		</transform>
+		
+		<transform DEF="PRAG" translation="-1 0.1 63">
+			<shape>
+				<appearance>
+					<ImageTexture url="texturi/cale.jpg"></ImageTexture>
+					<TextureTransform scale="3, 1"></TextureTransform>
+				</appearance>
+				<box size="120 0.25 7"></box>
+			</shape>
+	</transform>
+	</scene>
+</x3d>
+</body>
+</html>
