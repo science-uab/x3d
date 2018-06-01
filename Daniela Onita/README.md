@@ -1,5 +1,5 @@
 # x3d
 Daniela`s house
-![poza1] (https://github.com/Dani25/x3d/blob/master/Daniela%20Onita/1.PNG)
 
+![poza1](![poza1](https://github.com/botanrobert/x3d/blob/master/BotanRobert_x3d_house/casa_cu_acoperis.png?raw=true)?raw=true)
 
