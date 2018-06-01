@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type='text/javascript' src='x3d.js'> </script> 
+			<script type='text/javascript' src='https://mihaioltean.github.io/x3d/x3dom.js'> </script> 
+			<link rel='stylesheet' type='text/css' href='https://mihaioltean.github.io/x3d/x3dom.css'></link> 		
+</head>
+<body>
+<p>MY HUMBLE APARTMENT</p>
+<x3d width="1500" height="1000">
+	
+	<scene>
+<!--podea-->
+		<transform scale="220 1 180" >
+			<shape DEF = "podea">
+				<appearance>
+					<ImageTexture  url="parchet.jpg"><ImageTexture/>
+				</appearance>
+
+				<box></box>
+
+			</shape>
+		</transform>
+<!--tavan-->
+		<transform scale="220 1 180" >
+		<transform translation="0 100 0">
+			<shape DEF = "podea">
+				<appearance>
+					<ImageTexture  url="outside.jpg"><ImageTexture/>
+				</appearance>
+
+				<box></box>
+
+			</shape>
+		</transform>
+		</transform>
+<!--peretele principal fata-->
+		<transform scale="220 50 1" >
+			<transform translation="0 1 180">
+				<shape>
+					<appearance>
+						<ImageTexture url="caramida.jpg"><ImageTexture/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--geam camera 1-->
+		<transform scale="20 25 1.4" >
+			<transform translation="-2.6 2.1 128.5">
+				<shape>
+					<appearance>
+						<ImageTexture url="fereastra.jpg"><ImageTexture/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--geam baie -->	
+		<transform scale="15 15 1.4" >
+		<transform translation="8.5 4.15 128.5">
+				<shape>
+					<appearance>
+					<ImageTexture url="geambaie.jpg"><ImageTexture/>	
+					</appearance>
+					<box></box>
+				</shape>
+			</transform>
+		</transform>
+	
+<!--perete principal spate-->
+		<transform scale="220 50 1">
+			<transform translation="0 1 -180">
+				<shape>
+					<appearance>
+						<ImageTexture url="caramida.jpg"><ImageTexture/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--geam camera 2-->
+			<transform scale="20 25 1.4" >
+			<transform translation="4 2.1 -128.5">
+				<shape>
+					<appearance>
+					<ImageTexture url="fereastra.jpg"><ImageTexture/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--geam living -->
+			<transform scale="20 25 1.4" >
+			<transform translation="-6.5 2.1 -128.5">
+				<shape>
+					<appearance>
+					<ImageTexture url="fereastra.jpg"><ImageTexture/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--perete principal dreapta-->
+		<transform scale="1 50 180" >
+			<transform translation="220 1 0">
+				<shape>
+					<appearance>
+						<ImageTexture url="caramida.jpg"><ImageTexture/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+		
+		
+<!--perete principal stanga-->
+		<transform scale="1 50 180" >
+			<transform translation="-220 1 0">
+				<shape>
+					<appearance>
+						<<ImageTexture url="caramida.jpg"><ImageTexture/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>		
+	
+		
+<!--usa de la intrare-->
+		<transform scale="17 45 1">
+		<transform translation="-10 1 180.1">
+			<shape>
+				<appearance>
+						<<ImageTexture url="usaintrare.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+
+<!-- dulap bucatarie jos-->		
+		<transform scale="15 20 45">
+		<transform translation="-2.4 1.2 -2.1">
+			<shape>
+				<appearance>
+					<ImageTexture url="blatbucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!-- dulap bucatarie sus-->		
+		<transform scale="15 14 45">
+		<transform translation="-2.4 5.9 -2.1">
+			<shape>
+				<appearance>
+					<ImageTexture url="bucatariesus.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--blat masa-->
+		<transform scale="18 2 32">
+		<transform translation="-6.95 17 -3.2">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+		
+<!--picior masa bucatarie stanga sus -->
+		<transform scale="2 16 2">
+		<transform translation="-70 1.2 -60">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--picior masa bucatarie stanga jos -->
+		<transform scale="2 16 2">
+		<transform translation="-70 1.2 -40">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--picior masa bucatarie dreapta sus 1-->
+		<transform scale="2 16 2">
+		<transform translation="-55 1.2 -60">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--picior masa bucatarie dreapta jos 1-->
+		<transform scale="2 16 2">
+		<transform translation="-55 1.2 -40">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+		
+<!--picior scaun bucatarie stanga sus 1-->
+		<transform scale="1 16 1">
+		<transform translation="-100 1 -110">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--picior scaun bucatarie stanga jos 1-->	
+		<transform scale="1 16 1">
+		<transform translation="-100 1 -90">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--picior scaun bucatarie dreapta sus 1-->		
+		<transform scale="1 16 1">
+		<transform translation="-85 1 -110">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform> 
+		</transform>
+<!--picior scaun bucatarie dreapta jos 1-->		
+		<transform scale="1 16 1">
+		<transform translation="-85 1 -90">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--blat scaun bucatarie 1-->
+		<transform scale="12 1 15">
+		<transform translation="-7.6 32 -6.5">
+			<shape>
+				<appearance>
+					<ImageTexture url="scaun.png"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+
+		
+		
+		
+<!--picior scaun bucatarie dreapta sus 2-->
+		<transform scale="1 16 1">
+		<transform translation="-153 1 -110">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--picior scaun bucatarie dreapta jos 2-->	
+		<transform scale="1 16 1">
+		<transform translation="-153 1 -90">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--picior scaun bucatarie stanga sus 2-->		
+		<transform scale="1 16 1">
+		<transform translation="-168 1 -110">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform> 
+		</transform>
+<!--picior scaun bucatarie stanga jos 2-->		
+		<transform scale="1 16 1">
+		<transform translation="-168 1 -90">
+			<shape>
+				<appearance>
+					<ImageTexture url="masabucatarie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--blat scaun bucatarie 2-->
+		<transform scale="12 1 15">
+		<transform translation="-13.3 32 -6.5">
+			<shape>
+				<appearance>
+					<ImageTexture url="scaun.png"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!-- dulap living-->		
+		<transform scale="15 15 30">
+		<transform translation="-7 1.2 3.4">
+			<shape>
+				<appearance>
+					<ImageTexture url="pantofar.jpeg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--dus baie -->
+		<transform scale="30 39 30">
+		<transform translation="6.2 1 4.8">
+			<shape>
+				<appearance>
+					<ImageTexture url="dus.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--toaleta baza jos -->	
+		<transform scale="8 2 15">
+		<transform translation="16 2 10">
+			<shape>
+				<appearance>
+					<ImageTexture url="lemn.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--toaleta baza sus -->
+		<transform scale="9 3 17">
+		<transform translation="14.5 4 9">
+			<shape>
+				<appearance>
+					<ImageTexture url="toaleta.png"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!-- chiuveta jos -->
+		<transform scale="10 13 10">
+		<transform translation="11.3 1 9">
+			<shape>
+				<appearance>
+					<ImageTexture url="bazachiuveta.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!-- chiuveta sus -->
+		<transform scale="10 1 16">
+		<transform translation="11.3 25.5 5.6">
+			<shape>
+				<appearance>
+					<ImageTexture url="chiuveta.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+
+
+<!--gresie baie -->
+		<transform scale="59 2 80">
+		<transform translation="2.71 1 1.23">
+			<shape>
+				<appearance>
+					<ImageTexture url="gresie.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--faianta baie -->
+		<transform scale="0.5 30 80" >
+		<transform translation="203 1 1.26">
+
+				<shape>
+					<appearance>
+					<ImageTexture url="faianta.jpg"><ImageTexture/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--oglinda baie-->		
+		<transform scale="0.5 13 10">
+		<transform translation="203.5 4 9">
+			<shape>
+				<appearance>
+					<material diffuseColor = "1 1 1"/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+		
+		
+<!--pat camera 1-->
+		<transform scale="35 10 50">
+		<transform translation="0.43 1.7 2.6">
+			<shape>
+				<appearance> 
+						<ImageTexture  url="pat.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--spatar pat camera 1-->
+		<transform scale="40 22 1.3">
+		<transform translation="0.39 1 135.9">
+			<shape>
+				<appearance> 
+						<ImageTexture  url="lemn.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+<!--dulap camera 1  -->
+		<transform scale="10 35 35">
+		<transform translation="-7.8 1 3">
+			<shape>
+				<appearance>
+					<ImageTexture url="dulap.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+
+<!-- noptiera camera 1 -->
+		<transform scale="10 13 10">
+		<transform translation="7 1 16">
+			<shape>
+				<appearance>
+					<ImageTexture url="noptiera.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+
+<!--pat camera 2-->
+		<transform scale="50 10 35">
+		<transform translation="0.60 1.7 -3">
+			<shape>
+				<appearance> 
+						<ImageTexture  url="pat.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+
+<!--spatar pat camera 2-->
+
+		<transform scale="1.3 22 40">
+		<transform translation="-14 1 -2.6">
+			<shape>
+				<appearance> 
+						<ImageTexture  url="lemn.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+
+<!--dulap camera 2  -->
+		<transform scale="10 35 35">
+		<transform translation="21 1 -3">
+			<shape>
+				<appearance>
+					<ImageTexture url="dulap.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+
+<!-- noptiera camera 2 -->
+		<transform scale="10 13 10">
+		<transform translation="0 1 -5">
+			<shape>
+				<appearance>
+					<ImageTexture url="noptiera.jpg"><ImageTexture/>
+				</appearance>
+				<box><box>
+			</shape>
+		</transform>
+		</transform>
+
+<!--perete dormitor 2 dreapta-->
+		<transform translation="180 50 -30 ">
+			<transform scale="40 50 1" >
+				<shape>
+					<appearance>
+						<material diffuseColor = "1 0 1 "/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--perete dormitor 2 stanga-->
+		<transform translation="20 50 -30 ">
+			<transform scale="40 50 1" >
+				<shape>
+					<appearance>
+						<material diffuseColor = "1 1 1 "/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+
+<!--perete dormitor 2 lateral stanga-->
+		<transform translation="-20 50 -105">
+			<transform scale="1 50 75" >
+				<shape>
+					<appearance>
+						<material diffuseColor = "1 1 1 "/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+
+<!--perete dormitor 1 lateral dreapta-->
+		<transform translation="100 50 100">
+			<transform scale="1 50 80" >
+				<shape>
+					<appearance>
+						<material diffuseColor = "1 1 1 "/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--perete dormitor 1 lateral stanga-->
+		<transform translation="-90 50 100">
+			<transform scale="1 50 80" >
+				<shape>
+					<appearance>
+						<material diffuseColor = "1 1 1 "/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+
+
+<!--perete dormitor intrare 1 stanga-->
+		<transform translation="-50 50 20">
+			<transform scale="40 50 1" >
+				<shape>
+					<appearance>
+						<material diffuseColor = "1 0.6 1 "/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+
+<!--perete dormitor intreare 1 dreapta-->
+		<transform translation="70 50 20">
+			<transform scale="30 50 1" >
+				<shape>
+					<appearance>
+						<material diffuseColor = "0 0.6 1 "/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--perete baie stanga-->
+		<transform translation="120 50 20">
+			<transform scale="20 50 1" >
+				<shape>
+					<appearance>
+						<material diffuseColor = "0 0.6 1 "/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+<!--perete baie dreapta-->
+		<transform translation="200 50 20">
+			<transform scale="20 50 1" >
+				<shape>
+					<appearance>
+						<material diffuseColor = "0 0.6 0.3 "/>
+					</appearance>
+
+					<box></box>
+
+				</shape>
+			</transform>
+		</transform>
+
+	</scene>
+
+</x3d>
+
+</body>
+</html>
