@@ -1,0 +1,793 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Casa in culori</title>
+		<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+	    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+	</head>
+	
+	<body>
+		<x3d  style="width:100%; height:85%" >
+			<scene>
+			
+			<!-- teren -->
+			<Transform DEF='Teren' translation='0 -5 20'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='green' emissiveColor='green' shininess='0' specularColor='green' transparency='0'/>
+					</Appearance> 
+					<Box size='300 4 260'/>
+				</Shape>
+			</Transform>
+			
+			<!-- placa -->
+			<Transform DEF='PlacaPodea' translation='0 -1 20'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='gray' emissiveColor='gary' shininess='0' specularColor='gray' transparency='0'/>
+					</Appearance> 
+					<Box size='140 4 110'/>
+				</Shape>
+			</Transform> 
+			
+			<!-- tavan -->
+			<Transform DEF='Tavan' translation='0 21.5 22'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='gray' emissiveColor='gary' shininess='0' specularColor='gray' transparency='0'/>
+					</Appearance> 
+					<Box size='150 1 125'/>
+				</Shape>
+			</Transform>
+
+			
+			<!-- perete staga  -->
+			<Transform DEF='PereteStangaIntreCamere' translation='-69 11 10'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 20'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteStangaCameraFata' translation='-69 11 39'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 7'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteStangaCameraFataJos' translation='-69 5 28'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 8 16'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteStangaCameraFataSus' translation='-69 19 28'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 4 16'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='GeamStangaCameraFata' translation='-69 13 28'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='0.5 8 16'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteStangaCameraSpate' translation='-69 11 -27'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 14'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteStangaCameraSpateJos' translation='-69 5 -10'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 8 20'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteStangaCameraSpateSus' translation='-69 19 -10'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 4 20'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='GamStangaCameraSpate' translation='-69 13 -10'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='0.5 8 20'/>
+				</Shape>
+			</Transform>
+
+			
+				<!-- perete dreapta  -->
+			<Transform DEF='PereteDreapta1' translation='69 11 40.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 3'/>
+				</Shape>
+			</Transform> 	
+			<Transform DEF='PereteDreapta2' translation='69 11 -32'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteDreaptaJos' translation='69 3 4'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 4 70'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteDreaptaSus' translation='69 19 4'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 4 70'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteDreaptaSticla' translation='69 11 4'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='0.5 12 70'/>
+				</Shape>
+			</Transform> 			
+			
+			
+				<!-- perete spate -->
+			<Transform DEF='PereteSpateBucatarieBaie' translation='40 11 -34'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='60 20 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteSpateBaieCamera' translation='-15 11 -34'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='30 20 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteSpateJosBaie' translation='5 6 -34'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='10 10 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteSpateSusBaie' translation='5 19 -34'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='10 4 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='GeamSpateBaie' translation='5 14 -34'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='10 6 0.5'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteSpateCamera' translation='-60 11 -34'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='20 20 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteSpateJosCamera' translation='-40 5 -34'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='20 8 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteSpateSusCamera' translation='-40 19 -34'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='20 4 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='GeamSpateCamera' translation='-40 13 -34'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='20 8 0.5'/>
+				</Shape>
+			</Transform>
+	
+	
+				<!-- perete fata -->
+
+			<Transform DEF='PereteFataStangaCamera' translation='-62.5 11 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='15 20 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteFataStangaJosCamera' translation='-42.5 5 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='25 8 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteFataStangaSusCamera' translation='-42.5 19 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='25 4 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='GeamFataCamera' translation='-42.5 13 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='25 8 0.5'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteFataStangaCameraHolIntrare' translation='-17.5 11 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='25 20 2'/>
+				</Shape>
+			</Transform>
+
+			<Transform DEF='PereteFataBucatarieDreapta' translation='67.5 11 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='5 20 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteFataHolIntrareBucatarie' translation='15 11 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='20 20 2'/>
+				</Shape>
+			</Transform>	
+			<Transform DEF='PereteBucatarieFataJos' translation='45 3 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='40 4 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteBucatarieFataJos' translation='45 19 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='40 4 2'/>
+				</Shape>
+			</Transform>	
+			<Transform DEF='PereteBucatarieFataJos' translation='45 11 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='40 12 0.5'/>
+				</Shape>
+			</Transform>			
+			
+			<Transform DEF='PereteFataDeasupaUsa' translation='0 19 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='10 4 2'/>
+				</Shape>
+			</Transform> 
+			
+		
+		<!-- pereti interior fata -->
+		<!-- peret hol stanga -->
+		<Transform DEF='PereteHolDreapta1' translation='15 11 31.8'>
+				<Shape>
+					<Appearance>
+					<!--<ImageTexture  url="pereteCaramida.jpg"><ImageTexture/> -->
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/> 
+					</Appearance> 
+					<Box size='2 20 23'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteHolDreapta2' translation='15 11 0'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 23'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteHolDreapta3' translation='24 11 -22'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 23'/>
+				</Shape>
+			</Transform> 
+		
+		<Transform DEF='PereteHolStanga1' translation='-15 11 31.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 23'/>
+				</Shape>
+			</Transform> 
+			
+			<Transform DEF='PereteHolStanga2' translation='-15 11 8.2'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 6.5'/>
+				</Shape>
+			</Transform> 
+		
+		<Transform DEF='PereteHolStanga3' translation='-15 11 -20'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 30'/>
+				</Shape>
+			</Transform> 
+		
+			<Transform DEF='PereteStangaDespartitorCamenre' translation='-42 11 10.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='55 20 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteHolFataD' translation='15 11 -10.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='20 20 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteHolFataS' translation='-10 11 -10.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='10 20 2'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteFataDeasupaUsa' translation='0 19 -10.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='10 4 2'/>
+				</Shape>
+			</Transform> 
+			
+			<!-- usa intrare in baie -->
+
+				<Transform DEF='UsaBaieParteaJos' translation='0 1.5 -10.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='9.5 1 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaBaieparteSus' translation='0 16.5 -10.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='8 1 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaBaieParteStanga' translation='-4.5 9 -10.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='1 16 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaBaieParteDreapta' translation='4.5 9 -10.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='1 16 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='SticlaUsaBaie' translation='0 9 -10.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.05'/>
+					</Appearance> 
+					<Box size='8 14 0.5'/>
+				</Shape>
+			</Transform> 
+			
+			
+			<!-- usa intrare dormitor 1 -->
+
+				<Transform DEF='UsaDormitorJos1' translation='-15 1.5 0'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 1 8'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaDormitorSus1' translation='-15 16.5 0'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 1 8'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaDormitorStanga1' translation='-15 9 -4.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 16 1'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaDormitorDreapta1' translation='-15 9 4.5'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 16 1'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='SticlaUsaDormitor1' translation='-15 9 0'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='0.5 14 8'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='PereteDeasupraUsaDormitor1' translation='-15 19 0'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 4 10'/>
+				</Shape>
+			</Transform> 
+			
+			
+			<!-- usa intrare dormitor 2 -->
+
+				<Transform DEF='UsaDormitor2Jos' translation='-15 1.5 15.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 1 8'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaDoritor2Sus' translation='-15 16.5 15.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 1 8'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaDormitor2Stanga' translation='-15 9 11.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 16 1'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaDormitorDreapta' translation='-15 9 19.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 16 1'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='SticlaUsaDormitor' translation='-15 9 15.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='0.5 14 8'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteDeasupraUsaDoritor2' translation='-15 19 15.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 4 10'/>
+				</Shape>
+			</Transform>
+			
+			
+			<!-- usa intrare living -->
+
+				<Transform DEF='UsaLivingJos' translation='15 1.5 15.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 1 8'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaLivingSus' translation='15 16.5 15.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 1 8'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaLivingStanga' translation='15 9 11.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 16 1'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaLivingDreapta' translation='15 9 19.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='2 16 1'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='SticlaUsaLiving' translation='15 9 15.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.5'/>
+					</Appearance> 
+					<Box size='0.5 14 8'/>
+				</Shape>
+			</Transform>
+			<Transform DEF='PereteDeasupraUsaLiving' translation='15 19 15.8'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='red' emissiveColor='red' shininess='0' specularColor='red' transparency='0'/>
+					</Appearance> 
+					<Box size='2 4 10'/>
+				</Shape>
+			</Transform> 
+			
+
+			
+			<!-- usa fata(intrare in casa)  -->
+
+				<Transform DEF='UsaCasaParteaJos' translation='0 5 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='10 8 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaCasaparteSus' translation='0 16.5 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='8 1 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaCasaParteStanga' translation='-4.5 13 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='1 8 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='UsaCasaParteDreapta' translation='4.5 13 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='black' emissiveColor='black' shininess='0' specularColor='black' transparency='0'/>
+					</Appearance> 
+					<Box size='1 8 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='SticlaUsaIntrare' translation='0 12.5 43'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='white' emissiveColor='white' shininess='0' specularColor='white' transparency='0.6'/>
+					</Appearance> 
+					<Box size='8 7 1'/>
+				</Shape>
+			</Transform> 
+			
+				
+				<!-- stalpi terasa -->
+			<Transform DEF='StalpStangaSpate' translation='-69 11 45'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='StalpDreaptaSpate' translation='69 11 45'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 2'/>
+				</Shape>
+			</Transform>	
+			<Transform DEF='StalpStangamijloc' translation='-44 11 74'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='StalpDreaptamijloc' translation='44 11 74'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 2'/>
+				</Shape>
+			</Transform> 
+				<Transform DEF='StalpStanga2' translation='-69 11 74'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='StalpStanga1' translation='-15 11 74'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='StalpDreapta1' translation='15 11 74'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 2'/>
+				</Shape>
+			</Transform> 
+			<Transform DEF='StalpDreapta1' translation='69 11 74'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0'/>
+					</Appearance> 
+					<Box size='2 20 2'/>
+				</Shape>
+			</Transform> 
+
+			<!-- gard fata -->
+
+				<Transform DEF='GardFataStanga' translation='-42 5 74'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0.6'/>
+					</Appearance> 
+					<Box size='54 5 0.1'/>
+				</Shape>
+			</Transform> 
+			
+			<Transform DEF='GardFataDreapta' translation='42 5 74'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0.6'/>
+					</Appearance> 
+					<Box size='54 5 0.1'/>
+				</Shape>
+			</Transform> 
+
+			<Transform DEF='GardStanga' translation='-69 5 60'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0.6'/>
+					</Appearance> 
+					<Box size='0.1 5 30'/>
+				</Shape>
+			</Transform> 
+			
+			<Transform DEF='GardDreapta' translation='69 5 60'>
+				<Shape>
+					<Appearance>
+						<Material diffuseColor='#FF9933' emissiveColor='#FF9933' shininess='0' specularColor='#FF9933' transparency='0.6'/>
+					</Appearance> 
+					<Box size='0.1 5 30'/>
+				</Shape>
+			</Transform> 
+			
+			<!-- Acoperis -->
+			<shape>
+				<appearance>
+					<material diffusecolor ="0.86 0.2 0.86" transparency="0">
+				</appearance>
+				<indexedfaceset coordIndex=" 0 1 2 3 ">
+					<coordinate point = "75 22 85, 75 22 -40, 0 65 -5 ,-75 22 85">
+				</indexedfaceset>
+			</shape> 
+			<shape> 
+				<appearance>
+					<material diffusecolor ="0.86 0.3 0.86" transparency="0">
+				</appearance>
+				<indexedfaceset coordIndex=" 0 1 2 3 ">
+					<coordinate point = " -75 22 -40 ,-75 22 85, 0 65 -5 , 75 22 -40">
+				</indexedfaceset>
+			</shape>
+			
+				
+			</scene>
+		</x3d>
+		
+		
+		
+	</body>	
+</html>
