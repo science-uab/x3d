@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Floare Diana</title>
+    <script type="text/javascript" src="x3dom.js"></script>
+</head>
+
+<body>
+
+    <x3d width='100%' height='900px'>
+        <scene>
+            <!-- Podea -->
+            <Transform scale='100 1 100'>
+                <shape DEF="qub">
+                    <appearance>
+                        <imagetexture url="imagini/podea.jpg" />
+                    </appearance>
+                    <box></box>
+                </shape>
+            </Transform>
+            <!-- Sufragerie -->
+            <!-- Perete Exterior 1 -->
+            <Transform translation='-95 25 100'>
+                <Transform scale='5 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>    
+            <!-- Perete Exterior 2 -->
+            <Transform translation='0 25 100'>
+                <Transform scale='30 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Perete Exterior 3 -->
+            <Transform translation='95 25 100'>
+                <Transform scale='5 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>   
+           <!-- Bucatarie -->
+            <!-- Perete Exterior 1 -->
+            <Transform translation='-95 25 -100'>
+                <Transform scale='5 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>    
+            <!-- Perete Exterior 2 -->
+            <Transform translation='-5 25 -100'>
+                <Transform scale='40 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Perete Exterior 3 -->
+            <Transform translation='95 25 -100'>
+                <Transform scale='5 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>          
+            <!-- Perete Exterior N
+            
+            <Transform translation='0 25 -100'>
+                <Transform scale='100 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <material diffuseColor="0 1 0" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>     -->
+
+            <!-- Perete Exterior Bai + Dormitor -->
+            <Transform translation='100 25 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='100 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/perete.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+            <!-- Perete Exterior Intrare 1 -->
+            <Transform translation='-100 25 -58'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='43 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/perete.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>     
+            <!-- Perete Exterior Intrare 2 -->
+            <Transform translation='-100 25 58'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='43 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/perete.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>          
+            <!-- Perete Hol 1/Pult -->
+            <Transform translation='-95 25 -16'>
+                <Transform scale='5 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Perete Hol 2/Pult -->
+            <Transform translation='-90 10 -16'>
+                <Transform scale='5 10 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Perete Hol/sufragerie 1 -->
+            <Transform translation='-92 25 16'>
+                <Transform scale='8 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>  
+            <!-- Perete Sufragerie -->
+            <Transform translation='0 25 58'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='43 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/perete.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>   
+            <!-- Perete Sufragerie/Hol -->
+            <Transform translation='-20 25 16'>
+                <Transform scale='20 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Perete Bucatarie/Debara -->
+            <Transform translation='0 25 -58'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='43 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/perete.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+            <!-- Perete Bucatarie/Debara 2 -->
+            <Transform translation='-25 25 -95'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='5 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/perete.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+            <!-- Perete Bucatarie/Debara 3 -->
+            <Transform translation='-25 25 -40'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='25 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/perete.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>
+            <!-- Perete Hol 2/Pult 2 -->
+            <Transform translation='-35 10 -16'>
+                <Transform scale='10 10 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>   
+            <!-- Perete Hol 1/Dormitor - 1 -->
+            <Transform translation='5 25 -16'>
+                <Transform scale='5 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Perete Hol 1/Dormitor/Baia Mica -->
+            <Transform translation='65 25 -16'>
+                <Transform scale='35 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Perete Baia Mica/Baia Mare -->
+            <Transform translation='65 25 15'>
+                <Transform scale='35 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Perete Baia Mare/Dormitor Mic -->
+            <Transform translation='65 25 50'>
+                <Transform scale='35 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!--Perete SubGeam Sufragerie-->  
+            <Transform translation='-60 10 100'>
+                <Transform scale='30 10 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Geam Sufragerie-->  
+            <Transform translation='-60 31 100'>
+                <Transform scale='30 11 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>     
+            <!--Perete Peste Geam Sufragerie-->  
+            <Transform translation='-60 46 100'>
+                <Transform scale='30 4 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>  
+            <!--Perete SubGeam Camera Mica-->  
+            <Transform translation='60 10 100'>
+                <Transform scale='30 10 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Geam Camera Mica-->  
+            <Transform translation='60 31 100'>
+                <Transform scale='30 11 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>     
+            <!--Perete Peste Geam Camera Mica-->  
+            <Transform translation='60 46 100'>
+                <Transform scale='30 4 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!--Perete SubGeam Dormitor-->  
+            <Transform translation='62 10 -100'>
+                <Transform scale='28 10 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Geam Dormitor-->  
+            <Transform translation='62.5 31 -100'>
+                <Transform scale='27.5 11 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>     
+            <!--Perete Peste Geam Dormitor-->  
+            <Transform translation='62 46 -100'>
+                <Transform scale='28 4 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!--Perete SubGeam Bucatarie-->  
+            <Transform translation='-67.5 10 -100'>
+                <Transform scale='22.5 10 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Geam Bucatarie-->  
+            <Transform translation='-67.5 31 -100'>
+                <Transform scale='22.5 11 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <material diffuseColor="0.86 0.86 0.86" transparency='0.20' />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>     
+            <!--Perete Peste Geam Bucatarie-->  
+            <Transform translation='-67.5 46 -100'>
+                <Transform scale='22.5 4 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!--Usa Intrare-->  
+            <Transform translation='-100 25 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='15 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/usa1.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>  
+            <!--Usa Baie Mica-->  
+            <Transform translation='31 25 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='15 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/usa3.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform>          
+            <!--Usa Baie Mare-->  
+            <Transform translation='31 25 33'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='17 25 1'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/usa3.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform> 
+            <!-- Perete Hol/Dormitor Mic - 1 -->
+            <Transform translation='5 25 50'>
+                <Transform scale='5 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Usa Dormitor Mic - 1 -->
+            <Transform translation='20 25 50'>
+                <Transform scale='10 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/usa2.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Usa Dormitor Mare - 1 -->
+            <Transform translation='20 25 -16'>
+                <Transform scale='10 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/usa2.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Frigider -->
+            <Transform translation='-13 25 -20'>
+                <Transform scale='10 25 5'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/frigider.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Frigider -->
+            <Transform translation='-13 25 -35'>
+                <Transform scale='12 25 1'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/perete.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Bucatarie -->
+            <Transform translation='-95 8 -58'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='42 8 5'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/buc_jos.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Bucatarie -->
+            <Transform translation='0 25 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='42 8 5'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/buc_sus.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Sufragerie Mobila -->
+            <Transform translation='0 -8 110'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='30 25 5'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/mob_suf.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Sufragerie Canapea-->
+            <Transform translation='90 -17 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='30 8 3'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/canapea.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+
+            <!-- Dulap Dormitor -->
+            <Transform translation='10 15 -110'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='30 20 5'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/dormitor.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Pat Dormitor -->
+            <Transform translation='75 -15 5'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='20 5 20'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/lemn_pat.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Saltea Dormitor -->
+            <Transform translation='0 5 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='17 2 18'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/patura.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Covor Dormitor -->
+            <Transform translation='-45 -5.9 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='15 0.1 18'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/covor1.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!--Usa Cabina-->  
+            <Transform translation='45 15 53'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='15 20 0.5'>
+                        <shape DEF="qub">
+                            <appearance>
+                                <imagetexture url="imagini/cabina.jpg" />
+                            </appearance>
+                            <box></box>
+                        </shape>
+                    </Transform>
+                </Transform>
+            </Transform> 
+            <!-- Faianta -->
+            <Transform translation='31 -5.9 70'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='33 0.1 35'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/faianta.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Cada -->
+            <Transform translation='25 5 15'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='16 4 8'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/faianta.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Cada -->
+            <Transform translation='0 4 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='16 0.1 8'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/cada.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Chiuveta B.M. -->
+            <Transform translation='-35 6 -43'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='5 1 5'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/chiuveta_p.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Picior Chiveta B.M. -->
+            <Transform translation='0 -10 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='1 6 2'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/cada.jpg" />
+                        </appearance>
+                        <cylinder></cylinder>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Chiuveta B.Mare. -->
+            <Transform translation='0 8 30'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='5 1 5'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/chiuveta_r.jpg" />
+                        </appearance>
+                        <cylinder></cylinder>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Picior Chiveta B.Mare. -->
+            <Transform translation='0 -5 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='1 5 2'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/cada.jpg" />
+                        </appearance>
+                        <cylinder></cylinder>
+                    </shape>
+                </Transform>
+            </Transform>  
+            <!-- WC B.Mare. -->
+            <Transform translation='-10 4 25'>
+                <Transform rotation='0 1.5 0 1.57'>
+                    <Transform scale='6 1 4'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/cada.jpg" />
+                        </appearance>
+                        <cylinder></cylinder>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- WC B.Mare. -->
+            <Transform translation='0 -4 0'>
+                <Transform rotation='0 1.5 0 1.57'>
+                    <Transform scale='3 4 2'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder></cylinder>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Pat Dormitor mic --> 
+            <Transform translation='40 0 35'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='20 5 10'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/lemn_pat.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Saltea Dormitor mic -->
+            <Transform translation='0 5 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='17 2 9'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/patura2.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Masa Dormitor mic --> 
+            <Transform translation='-40 0 10'>
+                    <Transform scale='20 1 10'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/birou.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Sufragerie Masa-->
+            <Transform translation='-145 0 -30'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='20 0.5 15'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/masa2.jpg" />
+                        </appearance>
+                        <cylinder></cylinder>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Picior Masa. -->
+            <Transform translation='0 -7 0'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='2 7 2'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/masa2.jpg" />
+                        </appearance>
+                        <cylinder></cylinder>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Bucatarie Masa-->
+            <Transform translation='0 7 -100'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='15 0.5 10'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/masa.jpg" />
+                        </appearance>
+                        <box></box>
+                    </shape>
+                </Transform>
+            </Transform>
+            <!-- Picior Masa. -->
+            <Transform translation='0 -7 5'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='2 7 2'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/masa2.jpg" />
+                        </appearance>
+                        <cylinder></cylinder>
+                    </shape>
+                </Transform>
+            </Transform> 
+            <!-- Picior Masa. -->
+            <Transform translation='0 0 -10'>
+                <Transform rotation='0 1 0 1.57'>
+                    <Transform scale='2 7 2'>
+                    <shape DEF="qub">
+                        <appearance>
+                            <imagetexture url="imagini/masa2.jpg" />
+                        </appearance>
+                        <cylinder></cylinder>
+                    </shape>
+                </Transform>
+            </Transform> 
+
+        </scene>
+    </x3d>
+
+</body>
+
+</html>
