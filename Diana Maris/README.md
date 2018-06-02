@@ -1,9 +1,9 @@
 Proiect realizat in X3DOM
 
-![alt text](https://github.com/science-uab/x3d/tree/master/Diana%20Maris/Capturi/capture1.png)
+![img1](https://github.com/dianamaris9/dianamaris9.github.io/blob/master/Diana%20Maris/Capturi/capture1.PNG)
 
 
-![alt text](https://github.com/science-uab/x3d/tree/master/Diana%20Maris/Capturi/capture2.jpg)
+![img2](https://github.com/dianamaris9/dianamaris9.github.io/blob/master/Diana%20Maris/Capturi/capture2.JPG)
 
 
-![alt text](https://github.com/science-uab/x3d/tree/master/Diana%20Maris/Capturi/capture3.jpg)
+![img3](https://github.com/dianamaris9/dianamaris9.github.io/blob/master/Diana%20Maris/Capturi/capture3.JPG)
