@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+	    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 		
+	</head>
+	<body>
+		<p>Proiect X3D Apartament cu 2 Camere  </p>
+		<x3d width="" height="90vh" style="width:100%">
+			
+			<scene>
+				<Viewpoint bind='false' centerOfRotation='0,0,0' description='""' fieldOfView='0.89' isActive='false' metadata='X3DMetadataObject' orientation='0,0,0,1' position='0,0,25' zFar='-1' zFar='-1' zNear='-1' zNear='-1' ></Viewpoint>
+				<!--plan de jos  parchet -->
+				<shape>
+					<appearance>
+		<!--    <material diffusecolor ="0.80 0.80 0.80" transparency="0">        -->
+						<Material
+              diffuseColor='7 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 25 78 0 25 78 0 -25 -50 0 -25">
+					</indexedfaceset>
+				</shape>  
+				
+				<!-- perete sus usa bucatarie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="3 2 1 0">
+						<coordinate point = "-39 20 -7 -30 20 -7 -30 16 -7 -39 16 -7">
+					</indexedfaceset>
+				</shape> 
+				
+		
+		<!--		<Shape>
+					<Box size='85 +3.3 50'/>
+				<Appearance>
+				<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 25 78 0 25 78 0 -25 -50 0 -25">
+					</indexedfaceset>
+				</Appearance>
+				</Shape>
+				-->
+
+			</scene>
+
+		</x3d>
+
+	</body>
+</html>

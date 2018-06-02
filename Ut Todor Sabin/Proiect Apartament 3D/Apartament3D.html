@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+	    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 		
+	</head>
+	<body>
+		<p>Proiect X3D Apartament cu 2 Camere  </p>
+		<x3d width="" height="90vh" style="width:100%">
+			
+			<scene>
+				<Viewpoint bind='false' centerOfRotation='0,0,0' description='""' fieldOfView='0.88' isActive='false' metadata='X3DMetadataObject' orientation='0,0,0,1' position='0,0,25' zFar='-1' zFar='-1' zNear='-1' zNear='-1' ></Viewpoint>
+				<!--plan de jos  parchet -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='0.80 1 0.80'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 25 78 0 25 78 0 -25 -50 0 -25">
+						
+					</indexedfaceset>
+				</shape>  
+				
+					<!--plan de sus  placa -
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='60 10 0.80'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 20 25 78 20 25 78 20 -25 -50 20 -25">
+						
+					</indexedfaceset>
+				</shape>
+				
+				-->
+				<!-- perete mic stanga de la intrare   -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 -18 -50 0 -25 -50 20 -25 -50 20 -18">
+					</indexedfaceset>
+				</shape>    
+			
+               <!-- usa de la intrare apartament  -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='-7 20 30'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-45 0 -11 -50 0 -18 -50 18 -18 -45 18 -11">
+					</indexedfaceset>
+				</shape> 
+
+                <!-- usa intrare camera mare  -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='-7 20 30'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-16 0 -11 -20 0 -18 -20 18 -18 -16 18 -11">
+					</indexedfaceset>
+				</shape> 	
+            
+			<!-- usa intrare din camera mare in hol mic -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='-7 20 30'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "33 0 -11 29 0 -19 29 18 -19 33 18 -11">
+					</indexedfaceset>
+				</shape> 
+				
+				<!-- usa intrare din hol mic in camera mica -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='-7 20 30'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "53 0 -11 50 0 -18 50 18 -18 53 18 -11">
+					</indexedfaceset>
+				</shape> 
+
+				<!-- pozitie perete de la intrare dreapta   -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 25 -50 0 -11 -50 20 -11 -50 20 25">
+					</indexedfaceset>
+				</shape>    
+			
+
+				<!--  perete stanga spate apartament -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 -25 78 0 -25 78 20 -25 -50 20 -25">
+					</indexedfaceset>
+				</shape>    
+				 
+				<!-- perete mic 1 dreapta intre perete dreapta intrare usa  apartament si usa de la bucatarie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='5 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 -7 -39 0 -7 -39 20 -7 -50 20 -7">
+					</indexedfaceset>
+				</shape>     
+				
+                <!-- perete 2 dreapta intre usa de la bucatarie si camera mare -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='5 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-30 0 -7 -20 0 -7 -20 20 -7 -30 20 -7">
+					</indexedfaceset>
+				</shape>              
+				
+				
+				<!-- perete dreapta intre bucatarie si camera mare -->
+				
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 0 10'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-20 0 25 -20 0 -11 -20 20 -11 -20 20 25">
+					</indexedfaceset>
+				</shape>  
+				
+				<!-- perete stanga mic intre hol intrare si camera mare -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point =	"-20 0 -18 -20 0 -25 -20 20 -25 -20 20 -18">																		
+					</indexedfaceset>
+				</shape>                    
+			
+
+				<!-- perete intre camera mare si baie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 0 20'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "30 0 25 30 0 -11 30 20 -11 30 20 25">
+					</indexedfaceset>
+				</shape>    
+
+			
+				<!-- perete mic 1 intrare dreapta intre camera mare si baie -->
+
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 2 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "30 0 -7 36 0 -7 36 20 -7 30 20 -7">
+					</indexedfaceset>
+				</shape>    
+				
+				<!-- perete 2 intrare dreapta intre usa de la baie si camera mica -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 2 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "45 0 -7 50 0 -7 50 20 -7 45 20 -7">
+					</indexedfaceset>
+				</shape>              
+				
+				<!-- peretete stanga intre camera mare si hol mic inainte de baie -->
+				<shape>
+					<appearance>
+						<Material
+                             diffuseColor='7 1 0'
+                             specularColor='0.415 0.415 0.415'
+                             shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "30 0 -18 30 0 -25 30 20 -25 30 20 -18">
+					</indexedfaceset>
+				</shape> 
+
+				<!-- peretete stanga intre hol mic si camera mica -->
+				<shape>
+					<appearance>
+						<Material
+                             diffuseColor='7 1 0'
+                             specularColor='0.415 0.415 0.415'
+                             shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="3 2 1 0">
+						<coordinate point = "50 0 -25 50 0 -18 50 20 -18 50 20 -25">
+					</indexedfaceset>
+				</shape>
+
+                <!-- perete dreapta 1 intre baie si camera mica-->
+				<shape>
+					<appearance>
+						<Material
+                             diffuseColor='7 2 0'
+                             specularColor='0.415 0.415 0.415'
+                             shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "50 0 25 50 0 -11 50 20 -11 50 20 25">
+					</indexedfaceset>
+				</shape>    
+
+				<!-- perete dreapta 1 intre camera mica si apartament vecin-->
+				<shape>
+					<appearance>
+						
+						<Material
+						     diffuseColor='7 2 0'
+                             specularColor='0.415 0.415 0.415'
+                             shininess='0.102564'
+							 transparency="0"/>    
+					
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "78 0 25 78 0 -25 78 20 -25 78 20 25">
+					</indexedfaceset>
+				</shape>    
+
+        <!-- plan perete dreapta jos fata apartament sub ferestre -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 0 25 78 0 25 78 10 25 -50 10 25">
+					</indexedfaceset>
+				</shape>    
+				
+		<!-- plan perete dreapta sus fata apartament deasupra la ferestre -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='3 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-50 17 25 78 17 25 78 20 25 -50 20 25">
+					</indexedfaceset>
+				</shape> 
+				
+				
+		<!-- perete stanga din fata geam bucatarie -->
+				<shape>
+					<appearance>
+						<material diffusecolor ="7 2 0" transparency="0">
+					</appearance>
+					<indexedfaceset coordIndex="3 2 1 0">
+						<coordinate point = "-50 17 25 -40 17 25 -40 10 25 -50 10 25>
+					</indexedfaceset>
+					
+				</shape> 
+				
+		<!-- perete sus usa bucatarie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 1 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="3 2 1 0">
+						<coordinate point = "-39 20 -7 -30 20 -7 -30 16 -7 -39 16 -7">
+					</indexedfaceset>
+				</shape> 	
+				
+				<!-- perete sus usa baie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 2 0'
+              specularColor='0.415 0.415 0.415'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3 ">
+						<coordinate point = "45 20 -7 36 20 -7 36 16 -7 45 16 -7">
+					</indexedfaceset>
+				</shape> 	
+				
+				<!-- fereastra bucatarie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='15 10 0.9'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="3 2 1 0">
+						<coordinate point = "-40 17 25 -30 17 25 -30 10 25 -40 10 25">
+					</indexedfaceset>
+				</shape>
+				
+				<!-- perete dreapta fereastra bucatarie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 2 0'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-20 17 25 -30 17 25 -30 10 25 -20 10 25">
+					</indexedfaceset>
+				</shape>  
+				
+				<!-- perete stanga fereastra camera mare -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 2 0'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "-10 17 25 -20 17 25 -20 10 25 -10 10 25">
+					</indexedfaceset>
+				</shape> 
+				
+				<!-- fereastra camera mare -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='15 10 0.9'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "20 17 25 -10 17 25 -10 10 25 20 10 25">
+					</indexedfaceset>
+				</shape>
+
+            <!-- perete de la fereastra camera mare pana la fereastra baie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 2 0'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "35 17 25 20 17 25 20 10 25 35 10 25">
+					</indexedfaceset>
+				</shape>				
+				
+				<!-- fereastra baie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='15 10 0.9'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "40 17 25 35 17 25 35 12 25 40 12 25">
+					</indexedfaceset> 
+				</shape>	
+				
+				<!-- perete sub fereastra baie -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 2 0'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="0 1 2 3">
+						<coordinate point = "40 12 25 35 12 25 35 10 25 40 10 25">
+					</indexedfaceset> 
+				</shape>	
+					
+					<!-- fereastra camera mica -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='15 10 0.9'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="3 2 1 0">
+						<coordinate point = "56 17 25 75 17 25 75 10 25 56 10 25">
+					</indexedfaceset>
+				</shape>
+				
+				<!-- perete intre fereastra de la baie si fereastra camera mica -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 2 0'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="3 2 1 0">
+						<coordinate point = "40 17 25 56 17 25 56 10 25 40 10 25">
+					</indexedfaceset>
+				</shape>
+				
+				<!-- perete intre fereastra camera mica si perete vecin -->
+				<shape>
+					<appearance>
+						<Material
+              diffuseColor='7 2 0'
+              specularColor='0.50 0.205 0.50'
+              shininess='0.102564'/>
+					</appearance>
+					<indexedfaceset coordIndex="3 2 1 0">
+						<coordinate point = "75 17 25 78 17 25 78 10 25 75 10 25">
+					</indexedfaceset>
+				</shape>
+				
+				
+			</scene>
+
+		</x3d>
+
+	</body>
+</html>
