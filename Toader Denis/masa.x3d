@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+</head>
+
+<body>
+
+
+<X3D width="1920" height="1080">
+
+<Scene>
+
+<!-- Corp -->
+<Transform scale="1,0.05,1.5">
+	<Shape>
+		<Appearance>
+			<Material diffuseColor="0.957, 0.643, 0.376" ></Material>
+		</Appearance>
+		<Box></Box>
+	</Shape>
+</Transform>
+
+<!-- Picior stanga spate -->
+<Transform translation='-0.7,-0.5,-1.3'>
+	<Transform scale="0.1,0.5,0.1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.957, 0.643, 0.376" ></Material>
+			</Appearance>
+			<Cylinder></Cylinder>
+		</Shape>
+	</Transform>
+</Transform>
+<!-- Picior dreapta spate -->
+<Transform translation='0.7,-0.5,-1.3'>
+	<Transform scale="0.1,0.5,0.1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.957, 0.643, 0.376" ></Material>
+			</Appearance>
+			<Cylinder></Cylinder>
+		</Shape>
+	</Transform>
+</Transform>
+<!-- Picior dreapta fata -->
+<Transform translation='0.7,-0.5,1.3'>
+	<Transform scale="0.1,0.5,0.1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.957, 0.643, 0.3767" ></Material>
+			</Appearance>
+			<Cylinder></Cylinder>
+		</Shape>
+	</Transform>
+</Transform>
+<!-- Picior stanga fata -->
+<Transform translation='-0.7,-0.5,1.3'>
+	<Transform scale="0.1,0.5,0.1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.957, 0.643, 0.376" ></Material>
+			</Appearance>
+			<Cylinder></Cylinder>
+		</Shape>
+	</Transform>
+</Transform>
+
+</Scene>
+
+</X3D>
+
+</body>
+</html>

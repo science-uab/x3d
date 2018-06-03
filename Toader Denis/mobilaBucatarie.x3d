@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+</head>
+
+<body>
+
+
+<X3D width="1920" height="1080">
+
+<Scene>
+
+<!-- corp -->
+<Transform scale="2,0.5,0.5">
+	<Shape>
+		<Appearance>
+			<Material diffuseColor="1.000, 0.498, 0.314" ></Material>
+		</Appearance>
+		<Box></Box>
+	</Shape>
+</Transform>
+
+<!-- ghiuveta -->
+<Transform translation='-1.4,0.5,0'>
+	<Transform scale="0.4,0.05,0.4">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.878, 1.000, 1.000" ></Material>
+			</Appearance>
+			<Sphere></Sphere>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- partea dreapta ghiuveta -->
+<Transform translation='-0.8,0.47,0'>
+	<Transform scale="0.5,0.05,0.39">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.686, 0.933, 0.933" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- robinet -->
+<Transform translation='-1.4,0.75,-0.4'>
+	<Transform scale="0.05,0.25,0.05">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.275, 0.510, 0.706" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+<Transform translation='-1.4,1,-0.25'>
+	<Transform rotation='1,0,0,1.5708'> 
+		<Transform scale="0.05,0.2,0.05">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.275, 0.510, 0.706" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+	
+</Scene>
+
+</X3D>
+
+</body>
+</html>
